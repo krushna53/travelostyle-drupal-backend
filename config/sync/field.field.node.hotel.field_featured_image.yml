@@ -1,0 +1,29 @@
+uuid: 3f92a1fc-4b98-47a2-92a2-8b81d82d97e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_image
+    - media.type.image
+    - node.type.hotel
+id: node.hotel.field_featured_image
+field_name: field_featured_image
+entity_type: node
+bundle: hotel
+label: 'Featured Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

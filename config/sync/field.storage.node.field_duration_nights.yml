@@ -1,0 +1,20 @@
+uuid: e07366f1-0475-4b37-8984-a6a5829930a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_duration_nights
+field_name: field_duration_nights
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: d03e6a80-3ee7-4b73-b5fb-791527cf6497
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_offer_message
+field_name: field_offer_message
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

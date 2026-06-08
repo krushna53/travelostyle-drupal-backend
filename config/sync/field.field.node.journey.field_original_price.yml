@@ -1,0 +1,23 @@
+uuid: abe8d4c8-332d-4cc5-8fd8-353ae53df691
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_price
+    - node.type.journey
+id: node.journey.field_original_price
+field_name: field_original_price
+entity_type: node
+bundle: journey
+label: 'Original Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

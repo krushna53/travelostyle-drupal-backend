@@ -1,0 +1,21 @@
+uuid: a48cb5b6-fb4a-4de7-9d4e-bcbf98bc7952
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_day_title
+field_name: field_day_title
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

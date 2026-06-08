@@ -1,0 +1,55 @@
+uuid: bb263507-fe7d-4f96-8d72-3e3f8ffa7c26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.itinerary_day.field_day_number
+    - field.field.paragraph.itinerary_day.field_day_title
+    - field.field.paragraph.itinerary_day.field_description
+    - field.field.paragraph.itinerary_day.field_stay
+    - paragraphs.paragraphs_type.itinerary_day
+  module:
+    - text
+id: paragraph.itinerary_day.default
+targetEntityType: paragraph
+bundle: itinerary_day
+mode: default
+content:
+  field_day_number:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_day_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_stay:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,12 @@
+vendor
+web/phpmyadmin
+tmp
+web/sites/*/files
+web/modules/contrib
+web/modules/contrib/*
+/.ddev
+*.sql
+*.sql.zip
+web/sites/default/*
+web/sites/default
+web/themes/contrib/*

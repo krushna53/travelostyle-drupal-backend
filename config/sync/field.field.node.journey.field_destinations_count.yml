@@ -1,0 +1,23 @@
+uuid: 71f257fc-ef60-4c86-8c51-9d937380b697
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destinations_count
+    - node.type.journey
+id: node.journey.field_destinations_count
+field_name: field_destinations_count
+entity_type: node
+bundle: journey
+label: 'Destinations Count'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

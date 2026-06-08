@@ -1,0 +1,19 @@
+uuid: 472aaa36-3746-4986-9c21-b8139f80278a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_starts_in
+field_name: field_starts_in
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

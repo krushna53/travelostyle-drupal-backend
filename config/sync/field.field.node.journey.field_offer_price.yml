@@ -1,0 +1,23 @@
+uuid: c59114ce-3dd1-41a6-a0ab-c5044b18010d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_offer_price
+    - node.type.journey
+id: node.journey.field_offer_price
+field_name: field_offer_price
+entity_type: node
+bundle: journey
+label: 'Offer Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

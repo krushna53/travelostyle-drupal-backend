@@ -1,0 +1,28 @@
+uuid: 04c3409b-cec3-4838-b0bb-8ad996623253
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.basic_html
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.itinerary_day
+  module:
+    - text
+id: paragraph.itinerary_day.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: itinerary_day
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_with_summary

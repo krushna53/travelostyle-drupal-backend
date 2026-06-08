@@ -1,0 +1,29 @@
+uuid: 19d773b4-5bd6-4bd9-bb80-7cb1c1278e37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_starts_in
+    - node.type.journey
+    - node.type.location
+id: node.journey.field_starts_in
+field_name: field_starts_in
+entity_type: node
+bundle: journey
+label: 'Starts In'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

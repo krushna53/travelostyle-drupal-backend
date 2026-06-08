@@ -1,0 +1,36 @@
+uuid: 83eaf1d2-0d1c-4fd7-adef-dcbfbf9627c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.location.field_country
+    - field.field.node.location.field_location_description
+    - node.type.location
+  module:
+    - user
+id: node.location.default
+targetEntityType: node
+bundle: location
+mode: default
+content:
+  field_country:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_location_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

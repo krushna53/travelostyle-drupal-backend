@@ -1,0 +1,19 @@
+uuid: 5527bb72-6758-437e-bf8e-973b800b8e2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ends_in
+field_name: field_ends_in
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 3d2dbc8e-16f8-4925-9e9c-3cc8e14df90e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_offer_message
+    - node.type.journey
+id: node.journey.field_offer_message
+field_name: field_offer_message
+entity_type: node
+bundle: journey
+label: 'Offer Message'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

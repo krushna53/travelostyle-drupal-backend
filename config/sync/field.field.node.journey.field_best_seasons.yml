@@ -1,0 +1,29 @@
+uuid: 681f1b35-18ba-457e-9500-308ff64c2d07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_best_seasons
+    - node.type.journey
+    - taxonomy.vocabulary.best_seasons
+id: node.journey.field_best_seasons
+field_name: field_best_seasons
+entity_type: node
+bundle: journey
+label: 'Best Seasons'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      best_seasons: best_seasons
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
