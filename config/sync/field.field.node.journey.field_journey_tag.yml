@@ -1,0 +1,29 @@
+uuid: f1124d45-8a3a-47fc-8940-a70892b85e54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journey_tag
+    - node.type.journey
+    - taxonomy.vocabulary.tags
+id: node.journey.field_journey_tag
+field_name: field_journey_tag
+entity_type: node
+bundle: journey
+label: 'Journey Tag'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

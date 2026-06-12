@@ -1,0 +1,9 @@
+uuid: cff5a2a3-9e43-4b09-84de-d31b4b353b6c
+langcode: en
+status: true
+dependencies: {  }
+name: Offers
+vid: offers
+description: null
+weight: 0
+new_revision: false

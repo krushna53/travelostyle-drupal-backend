@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.journey.field_duration_nights
     - field.field.node.journey.field_ends_in
     - field.field.node.journey.field_group_size
+    - field.field.node.journey.field_journey_image
+    - field.field.node.journey.field_journey_tag
     - field.field.node.journey.field_offer_message
     - field.field.node.journey.field_offer_price
     - field.field.node.journey.field_original_price
@@ -88,6 +90,23 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 108
+    region: content
+  field_journey_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_journey_tag:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 115
     region: content
   field_offer_message:
     type: basic_string

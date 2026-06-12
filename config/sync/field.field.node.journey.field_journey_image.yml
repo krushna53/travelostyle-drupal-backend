@@ -1,0 +1,29 @@
+uuid: 2c6b2bce-3f68-4fad-bb7b-1b702e1e9d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journey_image
+    - media.type.image
+    - node.type.journey
+id: node.journey.field_journey_image
+field_name: field_journey_image
+entity_type: node
+bundle: journey
+label: 'Journey Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
