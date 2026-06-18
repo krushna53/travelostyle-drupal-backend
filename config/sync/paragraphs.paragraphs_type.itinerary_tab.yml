@@ -1,0 +1,10 @@
+uuid: d33c1499-6a50-4c6d-9437-f3bb03970224
+langcode: en
+status: true
+dependencies: {  }
+id: itinerary_tab
+label: 'Itinerary Tab'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

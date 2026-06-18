@@ -1,0 +1,29 @@
+uuid: d8688ca4-7cc7-4aa2-953e-a14c920b3ca6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_journey_map
+    - media.type.image
+    - paragraphs.paragraphs_type.itinerary_tab
+id: paragraph.itinerary_tab.field_journey_map
+field_name: field_journey_map
+entity_type: paragraph
+bundle: itinerary_tab
+label: 'Journey Map'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

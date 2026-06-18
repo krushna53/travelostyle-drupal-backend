@@ -1,0 +1,43 @@
+uuid: 3a724a56-dbb4-4f5f-950b-3de3ee411028
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_days
+    - paragraphs.paragraphs_type.itinerary_day
+    - paragraphs.paragraphs_type.itinerary_tab
+  module:
+    - entity_reference_revisions
+id: paragraph.itinerary_tab.field_days
+field_name: field_days
+entity_type: paragraph
+bundle: itinerary_tab
+label: Days
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      itinerary_day: itinerary_day
+    negate: 0
+    target_bundles_drag_drop:
+      highlight_card:
+        weight: 6
+        enabled: false
+      highlights_tab:
+        weight: 7
+        enabled: false
+      itinerary_day:
+        weight: 8
+        enabled: true
+      itinerary_tab:
+        weight: 9
+        enabled: false
+      journey_tabs_section:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

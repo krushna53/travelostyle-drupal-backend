@@ -1,0 +1,34 @@
+uuid: ede06c63-1d67-4453-ad5e-ad29bbc3f96a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stays_tab.field_hotels
+    - field.field.paragraph.stays_tab.field_stay_tab_title
+    - paragraphs.paragraphs_type.stays_tab
+id: paragraph.stays_tab.default
+targetEntityType: paragraph
+bundle: stays_tab
+mode: default
+content:
+  field_hotels:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_stay_tab_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

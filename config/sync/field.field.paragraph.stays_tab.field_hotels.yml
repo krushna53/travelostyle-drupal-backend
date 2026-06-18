@@ -1,0 +1,29 @@
+uuid: 48c7d484-616b-4a78-9f83-c5326b1f892b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hotels
+    - node.type.hotel
+    - paragraphs.paragraphs_type.stays_tab
+id: paragraph.stays_tab.field_hotels
+field_name: field_hotels
+entity_type: paragraph
+bundle: stays_tab
+label: Hotels
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      hotel: hotel
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

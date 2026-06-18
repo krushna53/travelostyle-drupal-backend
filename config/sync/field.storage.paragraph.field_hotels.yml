@@ -1,16 +1,16 @@
-uuid: f864acd4-fd4a-4089-ae89-c5f212a33ecc
+uuid: 4c90245a-8bc2-415d-b29a-f5ae28d4d41f
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_journey_tag
-field_name: field_journey_tag
-entity_type: node
+    - paragraphs
+id: paragraph.field_hotels
+field_name: field_hotels
+entity_type: paragraph
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: node
 module: core
 locked: false
 cardinality: -1

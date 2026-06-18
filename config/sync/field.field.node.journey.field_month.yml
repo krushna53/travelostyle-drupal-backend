@@ -1,0 +1,29 @@
+uuid: 94f2cd2e-c392-4089-8afe-8cd5b620aec7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_month
+    - node.type.journey
+    - taxonomy.vocabulary.month
+id: node.journey.field_month
+field_name: field_month
+entity_type: node
+bundle: journey
+label: Month
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      month: month
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

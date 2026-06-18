@@ -1,19 +1,19 @@
-uuid: f864acd4-fd4a-4089-ae89-c5f212a33ecc
+uuid: 1e4456f3-37f2-40df-95d6-6fb6322f6574
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-    - taxonomy
-id: node.field_journey_tag
-field_name: field_journey_tag
-entity_type: node
+    - media
+    - paragraphs
+id: paragraph.field_journey_map
+field_name: field_journey_map
+entity_type: paragraph
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: media
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,0 +1,10 @@
+uuid: ced82a7e-2ba5-47b5-b8ff-3d23839b3272
+langcode: en
+status: true
+dependencies: {  }
+id: stays_tab
+label: 'Stays Tab'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

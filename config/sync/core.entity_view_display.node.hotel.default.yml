@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.hotel.field_description
     - field.field.node.hotel.field_featured_image
     - field.field.node.hotel.field_gallery
+    - field.field.node.hotel.field_location
     - node.type.hotel
   module:
     - user
@@ -38,6 +39,14 @@ content:
       link: false
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
     region: content
   links:
     settings: {  }

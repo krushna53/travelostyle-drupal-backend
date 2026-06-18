@@ -1,0 +1,33 @@
+uuid: 811010b9-9ed3-4fa0-a885-ca1502ee9c1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlights_tab.field_highlight_cards
+    - field.field.paragraph.highlights_tab.field_tab_title
+    - paragraphs.paragraphs_type.highlights_tab
+  module:
+    - entity_reference_revisions
+id: paragraph.highlights_tab.default
+targetEntityType: paragraph
+bundle: highlights_tab
+mode: default
+content:
+  field_highlight_cards:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tab_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

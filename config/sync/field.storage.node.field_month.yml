@@ -1,19 +1,19 @@
-uuid: f864acd4-fd4a-4089-ae89-c5f212a33ecc
+uuid: 7915c458-725e-4dbe-9259-f66b91f699e4
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_journey_tag
-field_name: field_journey_tag
+id: node.field_month
+field_name: field_month
 entity_type: node
 type: entity_reference
 settings:
   target_type: taxonomy_term
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

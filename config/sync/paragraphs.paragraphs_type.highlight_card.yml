@@ -1,0 +1,10 @@
+uuid: ba3d0245-077c-47ec-a7b7-b44b46e39e8f
+langcode: en
+status: true
+dependencies: {  }
+id: highlight_card
+label: 'Highlight Card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

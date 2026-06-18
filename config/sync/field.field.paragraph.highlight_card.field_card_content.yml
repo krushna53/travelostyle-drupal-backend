@@ -1,0 +1,24 @@
+uuid: efe9fc63-427e-4daa-928f-3bf80067071e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_content
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.highlight_card
+  module:
+    - text
+id: paragraph.highlight_card.field_card_content
+field_name: field_card_content
+entity_type: paragraph
+bundle: highlight_card
+label: 'Card Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: 2f3b259f-95e4-48fb-a5f8-4691b80d8159
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.hotel
+    - node.type.location
+id: node.hotel.field_location
+field_name: field_location
+entity_type: node
+bundle: hotel
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

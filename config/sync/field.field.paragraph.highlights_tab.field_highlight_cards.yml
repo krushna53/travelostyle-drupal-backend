@@ -1,0 +1,40 @@
+uuid: 3c34f055-6978-4358-af71-34090744515a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_highlight_cards
+    - paragraphs.paragraphs_type.highlight_card
+    - paragraphs.paragraphs_type.highlights_tab
+  module:
+    - entity_reference_revisions
+id: paragraph.highlights_tab.field_highlight_cards
+field_name: field_highlight_cards
+entity_type: paragraph
+bundle: highlights_tab
+label: 'Highlight Cards'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      highlight_card: highlight_card
+    negate: 0
+    target_bundles_drag_drop:
+      highlight_card:
+        weight: 5
+        enabled: true
+      highlights_tab:
+        weight: 6
+        enabled: false
+      itinerary_day:
+        weight: 7
+        enabled: false
+      journey_tabs_section:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

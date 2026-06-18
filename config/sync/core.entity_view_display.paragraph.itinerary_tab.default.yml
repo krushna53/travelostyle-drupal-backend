@@ -1,0 +1,43 @@
+uuid: 0c2f6c79-822e-461e-97f1-c19fcc32585d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.itinerary_tab.field_days
+    - field.field.paragraph.itinerary_tab.field_itinerary_tab_title
+    - field.field.paragraph.itinerary_tab.field_journey_map
+    - paragraphs.paragraphs_type.itinerary_tab
+  module:
+    - entity_reference_revisions
+id: paragraph.itinerary_tab.default
+targetEntityType: paragraph
+bundle: itinerary_tab
+mode: default
+content:
+  field_days:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_itinerary_tab_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_journey_map:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

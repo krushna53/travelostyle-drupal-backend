@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.location.field_country
+    - field.field.node.location.field_geolocation
     - field.field.node.location.field_location_description
     - node.type.location
   module:
+    - geofield
     - user
 id: node.location.default
 targetEntityType: node
@@ -20,6 +22,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_geolocation:
+    type: geofield_default
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_location_description:
     type: basic_string

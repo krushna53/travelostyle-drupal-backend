@@ -1,0 +1,19 @@
+uuid: e1e6cca9-6602-4844-8fff-b50132a07f48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_itinerary_tab_title
+    - paragraphs.paragraphs_type.itinerary_tab
+id: paragraph.itinerary_tab.field_itinerary_tab_title
+field_name: field_itinerary_tab_title
+entity_type: paragraph
+bundle: itinerary_tab
+label: 'Itinerary Tab Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

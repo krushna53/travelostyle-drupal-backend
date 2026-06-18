@@ -1,0 +1,50 @@
+uuid: 97092069-ae62-4ea2-bc6b-cedf68b8ebc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_tabs
+    - paragraphs.paragraphs_type.highlights_tab
+    - paragraphs.paragraphs_type.itinerary_tab
+    - paragraphs.paragraphs_type.journey_tabs_section
+    - paragraphs.paragraphs_type.stays_tab
+  module:
+    - entity_reference_revisions
+id: paragraph.journey_tabs_section.field_section_tabs
+field_name: field_section_tabs
+entity_type: paragraph
+bundle: journey_tabs_section
+label: 'Section Tabs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      highlights_tab: highlights_tab
+      itinerary_tab: itinerary_tab
+      stays_tab: stays_tab
+    negate: 0
+    target_bundles_drag_drop:
+      highlight_card:
+        weight: 7
+        enabled: false
+      highlights_tab:
+        weight: 8
+        enabled: true
+      itinerary_day:
+        weight: 9
+        enabled: false
+      itinerary_tab:
+        weight: 10
+        enabled: true
+      journey_tabs_section:
+        weight: 11
+        enabled: false
+      stays_tab:
+        weight: 12
+        enabled: true
+field_type: entity_reference_revisions

@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.location.field_country
+    - field.field.node.location.field_geolocation
     - field.field.node.location.field_location_description
     - node.type.location
   module:
+    - geofield
     - path
 id: node.location.default
 targetEntityType: node
@@ -28,6 +30,13 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_geolocation:
+    type: geofield_latlon
+    weight: 124
+    region: content
+    settings:
+      html5_geolocation: false
     third_party_settings: {  }
   field_location_description:
     type: string_textarea

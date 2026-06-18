@@ -1,0 +1,10 @@
+uuid: 81dae091-2759-4566-beda-956f0c784e6d
+langcode: en
+status: true
+dependencies: {  }
+id: journey_tabs_section
+label: 'Journey Tabs Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,31 @@
+uuid: be60b8aa-960f-400f-b7d3-135b7f7d3153
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stays_tab.field_hotels
+    - field.field.paragraph.stays_tab.field_stay_tab_title
+    - paragraphs.paragraphs_type.stays_tab
+id: paragraph.stays_tab.default
+targetEntityType: paragraph
+bundle: stays_tab
+mode: default
+content:
+  field_hotels:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_stay_tab_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

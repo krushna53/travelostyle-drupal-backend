@@ -1,0 +1,10 @@
+uuid: 7ea08781-1bd8-48d8-8d96-53004cf4ebc7
+langcode: en
+status: true
+dependencies: {  }
+id: highlights_tab
+label: 'Highlights Tab'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

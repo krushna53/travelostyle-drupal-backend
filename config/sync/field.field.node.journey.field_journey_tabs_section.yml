@@ -1,0 +1,46 @@
+uuid: 34861978-3859-4f93-af6a-36a84f90a84e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journey_tabs_section
+    - node.type.journey
+    - paragraphs.paragraphs_type.journey_tabs_section
+  module:
+    - entity_reference_revisions
+id: node.journey.field_journey_tabs_section
+field_name: field_journey_tabs_section
+entity_type: node
+bundle: journey
+label: 'Journey Tabs Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      journey_tabs_section: journey_tabs_section
+    negate: 0
+    target_bundles_drag_drop:
+      highlight_card:
+        weight: 7
+        enabled: false
+      highlights_tab:
+        weight: 8
+        enabled: false
+      itinerary_day:
+        weight: 9
+        enabled: false
+      itinerary_tab:
+        weight: 10
+        enabled: false
+      journey_tabs_section:
+        weight: 11
+        enabled: true
+      stays_tab:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions
