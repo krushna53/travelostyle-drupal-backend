@@ -1,0 +1,45 @@
+uuid: 6c9757fc-2b13-4659-bada-27e16481f894
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.inclusion_exclusion_item.field_descriptions
+    - field.field.paragraph.inclusion_exclusion_item.field_icon
+    - field.field.paragraph.inclusion_exclusion_item.field_title
+    - paragraphs.paragraphs_type.inclusion_exclusion_item
+  module:
+    - media_library
+    - text
+id: paragraph.inclusion_exclusion_item.default
+targetEntityType: paragraph
+bundle: inclusion_exclusion_item
+mode: default
+content:
+  field_descriptions:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_icon:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

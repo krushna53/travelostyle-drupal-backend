@@ -1,0 +1,29 @@
+uuid: cecbea4a-9eb1-47ad-92be-49fec7af7b3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - media.type.image
+    - paragraphs.paragraphs_type.inclusion_exclusion_item
+id: paragraph.inclusion_exclusion_item.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: inclusion_exclusion_item
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

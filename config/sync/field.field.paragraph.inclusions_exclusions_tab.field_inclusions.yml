@@ -1,0 +1,52 @@
+uuid: b1019a24-be16-4b64-8f56-95b2d6b1143b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_inclusions
+    - paragraphs.paragraphs_type.inclusion_exclusion_item
+    - paragraphs.paragraphs_type.inclusions_exclusions_tab
+  module:
+    - entity_reference_revisions
+id: paragraph.inclusions_exclusions_tab.field_inclusions
+field_name: field_inclusions
+entity_type: paragraph
+bundle: inclusions_exclusions_tab
+label: Inclusions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      inclusion_exclusion_item: inclusion_exclusion_item
+    negate: 0
+    target_bundles_drag_drop:
+      highlight_card:
+        weight: 9
+        enabled: false
+      highlights_tab:
+        weight: 10
+        enabled: false
+      inclusion_exclusion_item:
+        weight: 11
+        enabled: true
+      inclusions_exclusions_tab:
+        weight: 12
+        enabled: false
+      itinerary_day:
+        weight: 13
+        enabled: false
+      itinerary_tab:
+        weight: 14
+        enabled: false
+      journey_tabs_section:
+        weight: 15
+        enabled: false
+      stays_tab:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,24 @@
+uuid: feb4af4e-ce2a-4bfb-87f7-741817df8690
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_descriptions
+    - paragraphs.paragraphs_type.inclusion_exclusion_item
+  module:
+    - text
+id: paragraph.inclusion_exclusion_item.field_descriptions
+field_name: field_descriptions
+entity_type: paragraph
+bundle: inclusion_exclusion_item
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
