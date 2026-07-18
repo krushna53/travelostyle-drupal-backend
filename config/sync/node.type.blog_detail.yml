@@ -1,0 +1,18 @@
+uuid: d0b734c7-996b-48b2-b030-2d503a8aa69a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Blog Detail'
+type: blog_detail
+description: 'Travel Blog Detail Page'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true
