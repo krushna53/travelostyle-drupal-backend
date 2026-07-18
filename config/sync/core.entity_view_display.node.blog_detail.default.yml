@@ -1,0 +1,75 @@
+uuid: e3687ae5-5da8-4d5b-b766-9977b06e6ec0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_detail.field_banner_image
+    - field.field.node.blog_detail.field_body
+    - field.field.node.blog_detail.field_categories
+    - field.field.node.blog_detail.field_gallery_images
+    - field.field.node.blog_detail.field_hero_image
+    - field.field.node.blog_detail.field_introduction
+    - node.type.blog_detail
+  module:
+    - text
+    - user
+id: node.blog_detail.default
+targetEntityType: node
+bundle: blog_detail
+mode: default
+content:
+  field_banner_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_categories:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_gallery_images:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_introduction:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+hidden: {  }

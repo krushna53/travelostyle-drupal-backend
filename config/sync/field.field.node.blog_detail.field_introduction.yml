@@ -1,0 +1,22 @@
+uuid: c563f590-9d13-408e-946f-a3c2464b9aa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_introduction
+    - node.type.blog_detail
+  module:
+    - text
+id: node.blog_detail.field_introduction
+field_name: field_introduction
+entity_type: node
+bundle: blog_detail
+label: Introduction
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
