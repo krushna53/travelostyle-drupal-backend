@@ -1,0 +1,23 @@
+uuid: 46720083-d5d1-49aa-ad2a-58cc97b4b7b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.journey
+  module:
+    - node
+id: journey_pattern
+label: 'Journey pattern'
+type: 'canonical_entities:node'
+pattern: '/journey/[node:title]'
+selection_criteria:
+  ea7efdb0-f340-46c6-a45e-03f0f38976c9:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      journey: journey
+selection_logic: and
+weight: 0
+relationships: {  }

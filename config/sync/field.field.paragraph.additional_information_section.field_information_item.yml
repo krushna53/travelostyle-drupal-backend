@@ -1,0 +1,58 @@
+uuid: 9ea63273-6943-4e98-91ad-3a5ad42f43b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_information_item
+    - paragraphs.paragraphs_type.additional_information_section
+    - paragraphs.paragraphs_type.information_item
+  module:
+    - entity_reference_revisions
+id: paragraph.additional_information_section.field_information_item
+field_name: field_information_item
+entity_type: paragraph
+bundle: additional_information_section
+label: 'Information Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      information_item: information_item
+    negate: 0
+    target_bundles_drag_drop:
+      additional_information_section:
+        weight: 11
+        enabled: false
+      highlight_card:
+        weight: 12
+        enabled: false
+      highlights_tab:
+        weight: 13
+        enabled: false
+      inclusion_exclusion_item:
+        weight: 14
+        enabled: false
+      inclusions_exclusions_tab:
+        weight: 15
+        enabled: false
+      information_item:
+        weight: 16
+        enabled: true
+      itinerary_day:
+        weight: 17
+        enabled: false
+      itinerary_tab:
+        weight: 18
+        enabled: false
+      journey_tabs_section:
+        weight: 19
+        enabled: false
+      stays_tab:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

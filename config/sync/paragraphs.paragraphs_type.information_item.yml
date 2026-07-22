@@ -1,0 +1,10 @@
+uuid: b2aee7e0-d5aa-42b6-b3d3-344a88b3cbb1
+langcode: en
+status: true
+dependencies: {  }
+id: information_item
+label: 'Information Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

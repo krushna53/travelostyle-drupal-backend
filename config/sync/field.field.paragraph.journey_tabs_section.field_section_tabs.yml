@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_section_tabs
+    - paragraphs.paragraphs_type.additional_information_section
     - paragraphs.paragraphs_type.highlights_tab
     - paragraphs.paragraphs_type.inclusions_exclusions_tab
     - paragraphs.paragraphs_type.itinerary_tab
@@ -27,10 +28,14 @@ settings:
     target_bundles:
       highlights_tab: highlights_tab
       itinerary_tab: itinerary_tab
+      additional_information_section: additional_information_section
       inclusions_exclusions_tab: inclusions_exclusions_tab
       stays_tab: stays_tab
     negate: 0
     target_bundles_drag_drop:
+      additional_information_section:
+        weight: 11
+        enabled: true
       highlight_card:
         weight: 7
         enabled: false
@@ -43,6 +48,9 @@ settings:
       inclusions_exclusions_tab:
         weight: 12
         enabled: true
+      information_item:
+        weight: 16
+        enabled: false
       itinerary_day:
         weight: 9
         enabled: false

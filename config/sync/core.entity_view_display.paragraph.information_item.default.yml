@@ -1,0 +1,31 @@
+uuid: 55a5fc87-c535-4415-b028-c4fde9cbf801
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.information_item.field_content
+    - field.field.paragraph.information_item.field_information_title
+    - paragraphs.paragraphs_type.information_item
+  module:
+    - text
+id: paragraph.information_item.default
+targetEntityType: paragraph
+bundle: information_item
+mode: default
+content:
+  field_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_information_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.location.field_address
     - field.field.node.location.field_country
     - field.field.node.location.field_geolocation
     - field.field.node.location.field_location_description
     - node.type.location
   module:
+    - address
     - geofield
     - user
 id: node.location.default
@@ -15,6 +17,13 @@ targetEntityType: node
 bundle: location
 mode: default
 content:
+  field_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
   field_country:
     type: entity_reference_label
     label: above

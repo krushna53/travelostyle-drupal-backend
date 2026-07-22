@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.journey.field_best_seasons
-    - field.field.node.journey.field_cta
     - field.field.node.journey.field_destinations_count
     - field.field.node.journey.field_duration_days
     - field.field.node.journey.field_duration_nights
@@ -22,7 +21,6 @@ dependencies:
     - field.field.node.journey.field_starts_in
     - node.type.journey
   module:
-    - link
     - media_library
     - paragraphs
     - path
@@ -46,14 +44,6 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_cta:
-    type: link_default
-    weight: 132
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
     third_party_settings: {  }
   field_destinations_count:
     type: number
@@ -127,14 +117,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_month:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 137
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_offer_message:
     type: string_textarea

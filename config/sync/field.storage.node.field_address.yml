@@ -1,16 +1,16 @@
-uuid: 0a5181d8-4f69-4e4a-8ff3-35dc70ff0877
+uuid: d0e0c1a0-42d1-4efc-8277-a572c6dd772d
 langcode: en
 status: true
 dependencies:
   module:
-    - link
+    - address
     - node
-id: node.field_cta
-field_name: field_cta
+id: node.field_address
+field_name: field_address
 entity_type: node
-type: link
+type: address
 settings: {  }
-module: link
+module: address
 locked: false
 cardinality: 1
 translatable: true

@@ -1,0 +1,9 @@
+name: Travelostyle API
+type: module
+description: 'Public endpoints for the decoupled frontend, e.g. resolving a URL alias to its node without exposing path_alias admin permissions.'
+package: Custom
+core_version_requirement: ^10.2 || ^11
+dependencies:
+  - drupal:node
+  - drupal:path_alias
+  - drupal:jsonapi

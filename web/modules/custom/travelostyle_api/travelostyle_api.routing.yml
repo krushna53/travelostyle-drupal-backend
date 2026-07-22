@@ -1,0 +1,7 @@
+travelostyle_api.journey_by_alias:
+  path: '/api/journey/{slug}'
+  defaults:
+    _controller: '\Drupal\travelostyle_api\Controller\JourneyApiController::getJourney'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'

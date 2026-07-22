@@ -1,0 +1,33 @@
+uuid: 4270a362-aac0-43fd-84b2-f542701a6346
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.additional_information_section.field_information_item
+    - field.field.paragraph.additional_information_section.field_section_title
+    - paragraphs.paragraphs_type.additional_information_section
+  module:
+    - entity_reference_revisions
+id: paragraph.additional_information_section.default
+targetEntityType: paragraph
+bundle: additional_information_section
+mode: default
+content:
+  field_information_item:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_section_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
