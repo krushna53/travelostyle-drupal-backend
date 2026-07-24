@@ -117,7 +117,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_month:
-    type: options_select
+    type: options_buttons
     weight: 137
     region: content
     settings: {  }
@@ -145,14 +145,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_pace:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 134
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_short_description:
     type: string_textarea

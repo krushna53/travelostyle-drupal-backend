@@ -1,0 +1,42 @@
+uuid: 14ccc950-1662-4b93-95fd-4c51a36dcd7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.best_seasons.field_ending_date
+    - field.field.taxonomy_term.best_seasons.field_starting_date
+    - taxonomy.vocabulary.best_seasons
+  module:
+    - datetime
+    - text
+id: taxonomy_term.best_seasons.default
+targetEntityType: taxonomy_term
+bundle: best_seasons
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ending_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_starting_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

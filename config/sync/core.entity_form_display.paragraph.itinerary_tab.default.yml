@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.itinerary_tab.field_days
-    - field.field.paragraph.itinerary_tab.field_itinerary_tab_title
     - field.field.paragraph.itinerary_tab.field_journey_map
     - paragraphs.paragraphs_type.itinerary_tab
   module:
@@ -32,14 +31,6 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings: {  }
-  field_itinerary_tab_title:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_journey_map:
     type: media_library_widget
