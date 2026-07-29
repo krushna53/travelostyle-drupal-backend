@@ -10,7 +10,7 @@ id: node.journey.field_journey_tag
 field_name: field_journey_tag
 entity_type: node
 bundle: journey
-label: 'Journey Tag'
+label: 'Journey Type'
 description: ''
 required: false
 translatable: false

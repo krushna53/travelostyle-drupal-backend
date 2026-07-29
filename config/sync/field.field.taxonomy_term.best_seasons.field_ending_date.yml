@@ -1,0 +1,21 @@
+uuid: 411f1d36-aca5-4f38-819b-6ea9cd5ca2eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ending_date
+    - taxonomy.vocabulary.best_seasons
+  module:
+    - datetime
+id: taxonomy_term.best_seasons.field_ending_date
+field_name: field_ending_date
+entity_type: taxonomy_term
+bundle: best_seasons
+label: 'Ending Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

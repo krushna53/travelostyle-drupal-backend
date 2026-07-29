@@ -1,0 +1,20 @@
+uuid: 5a1fdd95-6ecb-4376-a46d-10cc6ebeda7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - taxonomy
+id: taxonomy_term.field_ending_date
+field_name: field_ending_date
+entity_type: taxonomy_term
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

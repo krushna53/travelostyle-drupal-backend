@@ -1,0 +1,59 @@
+uuid: 45548c73-5ad2-4543-8a8c-e8ed62cfdfcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.best_seasons.field_ending_date
+    - field.field.taxonomy_term.best_seasons.field_starting_date
+    - taxonomy.vocabulary.best_seasons
+  module:
+    - datetime
+    - path
+    - text
+id: taxonomy_term.best_seasons.default
+targetEntityType: taxonomy_term
+bundle: best_seasons
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ending_date:
+    type: datetime_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_starting_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }
