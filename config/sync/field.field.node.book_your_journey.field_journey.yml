@@ -1,0 +1,29 @@
+uuid: 0ce2fdbf-76d8-46f9-95eb-4d84bae9b168
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journey
+    - node.type.book_your_journey
+    - node.type.journey
+id: node.book_your_journey.field_journey
+field_name: field_journey
+entity_type: node
+bundle: book_your_journey
+label: Journey
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      journey: journey
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

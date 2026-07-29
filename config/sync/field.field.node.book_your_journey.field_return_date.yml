@@ -1,0 +1,21 @@
+uuid: 12c6de54-a2f8-4e63-a350-7632d254d9f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_return_date
+    - node.type.book_your_journey
+  module:
+    - datetime
+id: node.book_your_journey.field_return_date
+field_name: field_return_date
+entity_type: node
+bundle: book_your_journey
+label: 'Return Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

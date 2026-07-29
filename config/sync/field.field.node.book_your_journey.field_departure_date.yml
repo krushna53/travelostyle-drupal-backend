@@ -1,0 +1,21 @@
+uuid: 20dc02d3-4651-4ed1-a106-7bf88a6e1eef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_departure_date
+    - node.type.book_your_journey
+  module:
+    - datetime
+id: node.book_your_journey.field_departure_date
+field_name: field_departure_date
+entity_type: node
+bundle: book_your_journey
+label: 'Departure Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
