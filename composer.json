@@ -29,6 +29,7 @@
         "drupal/inline_entity_form": "^3.0",
         "drupal/paragraphs": "^1.20",
         "drupal/pathauto": "^1.15",
+        "drupal/structure_sync": "^2.0",
         "drupal/svg_image": "^3.2",
         "drupal/token": "^1.17",
         "drush/drush": "^13.7"
