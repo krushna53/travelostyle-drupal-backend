@@ -1,19 +1,19 @@
-uuid: d30304d1-227d-4f60-9158-369f969eb55d
+uuid: f04f4cf9-ae57-4269-8181-5b65330d46e0
 langcode: en
 status: true
 dependencies:
   module:
-    - media
     - paragraphs
-id: paragraph.field_icon
-field_name: field_icon
+    - taxonomy
+id: paragraph.field_field_journey_inclusions
+field_name: field_field_journey_inclusions
 entity_type: paragraph
 type: entity_reference
 settings:
-  target_type: media
+  target_type: taxonomy_term
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
