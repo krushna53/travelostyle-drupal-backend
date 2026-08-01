@@ -1,0 +1,21 @@
+uuid: 3b6f4249-1b7c-4125-95f7-93583af4794b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status
+    - node.type.book_your_journey
+  module:
+    - options
+id: node.book_your_journey.field_status
+field_name: field_status
+entity_type: node
+bundle: book_your_journey
+label: Status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
