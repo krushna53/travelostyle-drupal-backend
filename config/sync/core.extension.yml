@@ -30,6 +30,7 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
+  jquery_ui: 0
   jsonapi: 0
   link: 0
   media: 0
@@ -49,6 +50,7 @@ module:
   svg_image: 0
   system: 0
   taxonomy: 0
+  taxonomy_manager: 0
   text: 0
   token: 0
   toolbar: 0

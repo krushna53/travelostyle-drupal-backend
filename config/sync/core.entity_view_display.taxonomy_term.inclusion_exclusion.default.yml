@@ -1,0 +1,31 @@
+uuid: 2f4a6c7a-b9d0-4d92-88b2-81dd1a100489
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.inclusion_exclusion.field_icon
+    - taxonomy.vocabulary.inclusion_exclusion
+  module:
+    - text
+id: taxonomy_term.inclusion_exclusion.default
+targetEntityType: taxonomy_term
+bundle: inclusion_exclusion
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

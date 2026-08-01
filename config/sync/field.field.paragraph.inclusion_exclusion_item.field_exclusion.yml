@@ -1,0 +1,29 @@
+uuid: cbe12e4b-b7bd-4350-9db4-f7db93abea2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_exclusion
+    - paragraphs.paragraphs_type.inclusion_exclusion_item
+    - taxonomy.vocabulary.inclusion_exclusion
+id: paragraph.inclusion_exclusion_item.field_exclusion
+field_name: field_exclusion
+entity_type: paragraph
+bundle: inclusion_exclusion_item
+label: Exclusion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      inclusion_exclusion: inclusion_exclusion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

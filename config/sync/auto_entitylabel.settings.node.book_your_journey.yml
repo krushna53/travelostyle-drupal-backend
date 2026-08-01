@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:field_journey]  - [node:field_departure_date:date:custom:m-d-Y] - [node:field_return_date:date:custom:m-d-Y]'
+escape: false
+preserve_titles: false
+save: true
+chunk: 50
+dependencies:
+  config:
+    - node.type.book_your_journey
+new_content_behavior: 0
