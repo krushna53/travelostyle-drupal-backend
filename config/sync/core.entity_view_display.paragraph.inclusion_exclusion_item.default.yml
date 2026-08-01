@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.inclusion_exclusion_item.field_descriptions
-    - field.field.paragraph.inclusion_exclusion_item.field_icon
-    - field.field.paragraph.inclusion_exclusion_item.field_title
+    - field.field.paragraph.inclusion_exclusion_item.field_exclusion
+    - field.field.paragraph.inclusion_exclusion_item.field_field_journey_inclusions
     - paragraphs.paragraphs_type.inclusion_exclusion_item
   module:
     - text
@@ -21,21 +21,20 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_icon:
-    type: entity_reference_entity_view
+  field_exclusion:
+    type: entity_reference_label
     label: above
     settings:
-      view_mode: default
-      link: false
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_field_journey_inclusions:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_title:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 0
     region: content
 hidden: {  }

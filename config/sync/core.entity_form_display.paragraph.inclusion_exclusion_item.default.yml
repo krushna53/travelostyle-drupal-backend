@@ -4,11 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.inclusion_exclusion_item.field_descriptions
-    - field.field.paragraph.inclusion_exclusion_item.field_icon
-    - field.field.paragraph.inclusion_exclusion_item.field_title
+    - field.field.paragraph.inclusion_exclusion_item.field_exclusion
+    - field.field.paragraph.inclusion_exclusion_item.field_field_journey_inclusions
     - paragraphs.paragraphs_type.inclusion_exclusion_item
   module:
-    - media_library
     - text
 id: paragraph.inclusion_exclusion_item.default
 targetEntityType: paragraph
@@ -25,20 +24,17 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  field_icon:
-    type: media_library_widget
+  field_exclusion:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_field_journey_inclusions:
+    type: options_buttons
     weight: 2
     region: content
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-  field_title:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
