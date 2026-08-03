@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Contains journey_ie_validation.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+
+/**
+ * Implements hook_entity_type_alter().
+ *
+ * Attaches our custom constraint to the Node entity type.
+ * The bundle check (journey only) happens inside the validator itself.
+ */
+function journey_ie_validation_entity_type_alter(array &$entity_types) {
+  /** @var \Drupal\Core\Entity\EntityTypeInterface $node_type */
+  if (isset($entity_types['node'])) {
+    $entity_types['node']->addConstraint('UniqueIeTerm');
+  }
+}

@@ -1,0 +1,5 @@
+name: 'Journey Inclusion Exclusion Validation'
+type: module
+description: 'Prevents the same taxonomy term from appearing in both Inclusions and Exclusions of the same Journey node.'
+package: Custom
+core_version_requirement: ^10 || ^11
