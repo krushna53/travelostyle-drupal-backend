@@ -1,0 +1,381 @@
+taxonomies:
+  best_seasons:
+    -
+      vid: best_seasons
+      tid: '14'
+      langcode: en
+      name: Jan–March
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: fe65eaf6-b73b-4334-a8c2-d4d5df8445b8
+      field_ending_date: {  }
+      field_starting_date: {  }
+    -
+      vid: best_seasons
+      tid: '15'
+      langcode: en
+      name: July–Sep
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: fdc48611-73a3-423d-aacb-12d281d25c10
+      field_ending_date: {  }
+      field_starting_date: {  }
+    -
+      vid: best_seasons
+      tid: '16'
+      langcode: en
+      name: june-dec
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1eb1760c-7f1b-4173-9a04-8e1f65e88232
+      field_ending_date: {  }
+      field_starting_date: {  }
+    -
+      vid: best_seasons
+      tid: '3'
+      langcode: en
+      name: September
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d717fab4-8087-48bd-96c4-e6a63659982a
+      field_ending_date: {  }
+      field_starting_date: {  }
+  categories: {  }
+  category:
+    -
+      vid: category
+      tid: '6'
+      langcode: en
+      name: Adventure
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a613b214-0aa5-4e56-9e82-c73f4b24ab03
+    -
+      vid: category
+      tid: '7'
+      langcode: en
+      name: Wildlife
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 5ea70b8a-f2cf-43d9-8296-b62c08f3e09d
+  country:
+    -
+      vid: country
+      tid: '13'
+      langcode: en
+      name: Africa
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 628bee97-6230-43c9-91e8-578ea087fe58
+    -
+      vid: country
+      tid: '12'
+      langcode: en
+      name: Europe
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 79d257ff-503d-4273-9024-c6de01a322b3
+    -
+      vid: country
+      tid: '2'
+      langcode: en
+      name: 'Indian Subcontinent'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a3eb608e-190f-485f-9fac-050769500908
+    -
+      vid: country
+      tid: '1'
+      langcode: en
+      name: Morocco
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 9f0efe2a-3def-49ee-bcf7-55ce1b4c8a7a
+  inclusion_exclusion:
+    -
+      vid: inclusion_exclusion
+      tid: '22'
+      langcode: en
+      name: Meals
+      description__value: '<p>Daily breakfast throughout &nbsp;· &nbsp;Dinner at the Sahara Desert camp &nbsp;· &nbsp;Selected dinners at riads and hotels (package-dependent) &nbsp;· &nbsp;Opportunities for guided local dining in Fez, Marrakech, and Ouarzazate</p>'
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: 3c1cf204-88e8-4e3d-a4d1-9e16ba4abef8
+      field_icon:
+        -
+          name: 'Guides & Tickets'
+          vid: inclusion_exclusion
+    -
+      vid: inclusion_exclusion
+      tid: '23'
+      langcode: und
+      name: Accommodation
+      description__value: '<p>12 nights across 4-star hotels, boutique riads, a desert gateway lodge, and a luxury tented camp in the Sahara &nbsp;· &nbsp;Full accommodation breakdown in the day-by-day section</p>'
+      description__format: basic_html
+      weight: '1'
+      parent: '0'
+      uuid: a91b7ae5-2c71-409a-9b20-db045d73346a
+      field_icon:
+        -
+          name: Transfers
+          vid: inclusion_exclusion
+    -
+      vid: inclusion_exclusion
+      tid: '24'
+      langcode: und
+      name: Portage
+      description__value: '<p>Luggage handling at hotels where available &nbsp;· &nbsp;Daily 2 bottled waters per person</p>'
+      description__format: basic_html
+      weight: '2'
+      parent: '0'
+      uuid: e82c2370-09ce-42e2-bcab-1cecddeb4445
+      field_icon:
+        -
+          name: Flights
+          vid: inclusion_exclusion
+    -
+      vid: inclusion_exclusion
+      tid: '25'
+      langcode: und
+      name: 'On-ground travel'
+      description__value: "<p>Private air-conditioned vehicle throughout &nbsp;· &nbsp;Professional driver for all transfers and excursions &nbsp;· &nbsp;Camel ride at sunset into the Sahara &nbsp;· &nbsp;Sidecar tour through Marrakech's hidden quarters</p>"
+      description__format: basic_html
+      weight: '3'
+      parent: '0'
+      uuid: d4063d57-11fc-47e3-a8a1-5fb5fc647411
+      field_icon:
+        -
+          name: 'Travel Insurance'
+          vid: inclusion_exclusion
+    -
+      vid: inclusion_exclusion
+      tid: '26'
+      langcode: und
+      name: 'Guides & Tickets'
+      description__value: '<p>Professional English-speaking licensed local guides &nbsp;· &nbsp;Entrance fees to all listed monuments, museums, and UNESCO sites &nbsp;· &nbsp;24/7 on-ground support and concierge assistance</p>'
+      description__format: basic_html
+      weight: '4'
+      parent: '0'
+      uuid: 41acbe68-4309-4e39-9819-69bed97340ed
+      field_icon:
+        -
+          name: 'Personal Costs'
+          vid: inclusion_exclusion
+    -
+      vid: inclusion_exclusion
+      tid: '27'
+      langcode: und
+      name: Transfers
+      description__value: '<p>Airport arrival transfer in Casablanca &nbsp;· &nbsp;Airport departure transfer from Marrakech &nbsp;· &nbsp;All inter-city and inter-destination transfers</p>'
+      description__format: basic_html
+      weight: '5'
+      parent: '0'
+      uuid: 51688124-ed35-439b-a0d9-05ed8747c617
+      field_icon:
+        -
+          name: Visa
+          vid: inclusion_exclusion
+    -
+      vid: inclusion_exclusion
+      tid: '28'
+      langcode: und
+      name: Flights
+      description__value: "<p>International flights to Casablanca and from Marrakech are not included. Travel O' Style can advise on routing and timing if needed.</p>"
+      description__format: basic_html
+      weight: '6'
+      parent: '0'
+      uuid: fb47d476-af8e-42ac-9406-5511ee8a31b1
+      field_icon:
+        -
+          name: Gratuities
+          vid: inclusion_exclusion
+    -
+      vid: inclusion_exclusion
+      tid: '29'
+      langcode: und
+      name: 'Travel Insurance'
+      description__value: '<p>Comprehensive travel insurance is strongly recommended. TravelOStyle can connect you with our preferred insurance partner.</p>'
+      description__format: basic_html
+      weight: '7'
+      parent: '0'
+      uuid: c76eee4d-6f7c-4406-bbc3-4276e044eba6
+    -
+      vid: inclusion_exclusion
+      tid: '30'
+      langcode: und
+      name: 'Personal Costs'
+      description__value: '<p>Laundry, minibar, phone charges, personal shopping, and any meals not specified in the itinerary.</p>'
+      description__format: basic_html
+      weight: '8'
+      parent: '0'
+      uuid: 5e33a22a-2837-49d6-83ac-ffec27d451dd
+    -
+      vid: inclusion_exclusion
+      tid: '31'
+      langcode: und
+      name: Visa
+      description__value: "<p>Visa requirements vary by nationality. Travel O' Style provides full visa guidance and can assist with application — ask your advisor.</p>"
+      description__format: basic_html
+      weight: '9'
+      parent: '0'
+      uuid: 04bcdda8-64a5-4874-a10d-8c58cf17890e
+    -
+      vid: inclusion_exclusion
+      tid: '32'
+      langcode: und
+      name: Gratuities
+      description__value: '<p>Tips for guides and drivers are not included and are left entirely to your discretion. You can also pay your tour manager prior to the trip to distribute gratuties.</p>'
+      description__format: basic_html
+      weight: '10'
+      parent: '0'
+      uuid: 60c66409-5134-4a0c-9e31-dc1b75b3604a
+  journey_style: {  }
+  location_type: {  }
+  month:
+    -
+      vid: month
+      tid: '8'
+      langcode: en
+      name: January
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 47c99359-7f47-4bb5-9c9b-ee76aa9b0399
+  offers:
+    -
+      vid: offers
+      tid: '9'
+      langcode: en
+      name: 'Early Bird'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 8eccfc74-929c-4d7d-88d9-cebb1add5732
+  pace:
+    -
+      vid: pace
+      tid: '18'
+      langcode: en
+      name: Fast
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 04bb28b0-4bc8-4a0e-ba3e-b30cd40e3029
+    -
+      vid: pace
+      tid: '17'
+      langcode: en
+      name: Moderate
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ece5c4ca-1a6d-4c0b-8d2a-e6d443dd6bde
+  region:
+    -
+      vid: region
+      tid: '19'
+      langcode: en
+      name: Africa
+      description__value: '<p>Kenya, Cape Town, Morocco and more</p>'
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: ca846bb2-49f7-4753-9c73-00c443f5fa60
+      field_region_image:
+        -
+          name: Accommodation
+          vid: inclusion_exclusion
+    -
+      vid: region
+      tid: '20'
+      langcode: en
+      name: Europe
+      description__value: '<p>France, Italy, Spain and more</p>'
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: c6cdee5b-70b8-4a56-86af-fc04d33ec7b1
+      field_region_image:
+        -
+          name: Portage
+          vid: inclusion_exclusion
+    -
+      vid: region
+      tid: '21'
+      langcode: en
+      name: 'North America'
+      description__value: '<p>USA, Canada, Mexico and more</p>'
+      description__format: basic_html
+      weight: '0'
+      parent: '0'
+      uuid: bc244e9b-f5f2-4ae4-a191-30ce132de66a
+      field_region_image:
+        -
+          name: 'On-ground travel'
+          vid: inclusion_exclusion
+  tags:
+    -
+      vid: tags
+      tid: '5'
+      langcode: en
+      name: 'Group Journey'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 60a2e196-dcd7-4a5c-abd5-0ea418aacc37
+    -
+      vid: tags
+      tid: '4'
+      langcode: en
+      name: 'Journey Tag'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b327722c-8b50-4f1c-8f64-ba4b9fc55b0e
+    -
+      vid: tags
+      tid: '10'
+      langcode: en
+      name: 'Private Journey'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: cbfe0542-5701-44ff-b5e7-4027cbd8527b
+    -
+      vid: tags
+      tid: '11'
+      langcode: en
+      name: 'Tailormade Journey'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b0a263de-16e3-4afd-8abb-cff61a20afd3
