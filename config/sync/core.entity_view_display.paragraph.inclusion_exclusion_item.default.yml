@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.inclusion_exclusion_item.field_descriptions
     - field.field.paragraph.inclusion_exclusion_item.field_exclusion
-    - field.field.paragraph.inclusion_exclusion_item.field_field_journey_inclusions
+    - field.field.paragraph.inclusion_exclusion_item.field_inclusion
     - paragraphs.paragraphs_type.inclusion_exclusion_item
   module:
     - text
@@ -29,7 +29,7 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  field_field_journey_inclusions:
+  field_inclusion:
     type: entity_reference_label
     label: above
     settings:
