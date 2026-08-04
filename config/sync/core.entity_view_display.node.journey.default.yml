@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.journey.field_best_seasons
+    - field.field.node.journey.field_category
     - field.field.node.journey.field_destinations_count
     - field.field.node.journey.field_duration_days
     - field.field.node.journey.field_duration_nights
@@ -35,6 +36,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 113
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 119
     region: content
   field_destinations_count:
     type: number_integer

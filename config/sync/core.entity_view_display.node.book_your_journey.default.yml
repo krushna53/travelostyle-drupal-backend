@@ -23,11 +23,7 @@ content:
     label: above
     settings:
       timezone_override: ''
-<<<<<<< HEAD
       format_type: medium
-=======
-      format_type: html_date
->>>>>>> 0bcc727916646e1c4dc24ab56e58eaff721a5949
     third_party_settings: {  }
     weight: 102
     region: content
@@ -52,11 +48,7 @@ content:
     label: above
     settings:
       timezone_override: ''
-<<<<<<< HEAD
       format_type: medium
-=======
-      format_type: html_date
->>>>>>> 0bcc727916646e1c4dc24ab56e58eaff721a5949
     third_party_settings: {  }
     weight: 103
     region: content
