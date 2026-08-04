@@ -1,0 +1,21 @@
+uuid: 7cb6564b-9087-4df4-a3d4-8a40238c846f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_early_bird
+    - taxonomy.vocabulary.offers
+id: taxonomy_term.offers.field_early_bird
+field_name: field_early_bird
+entity_type: taxonomy_term
+bundle: offers
+label: Early_Bird
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
