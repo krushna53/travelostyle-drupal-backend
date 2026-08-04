@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.journey.field_destinations_count
     - field.field.node.journey.field_duration_days
     - field.field.node.journey.field_duration_nights
+    - field.field.node.journey.field_early_bird
     - field.field.node.journey.field_ends_in
     - field.field.node.journey.field_group_size
     - field.field.node.journey.field_journey_image
@@ -72,6 +73,12 @@ content:
     region: content
     settings:
       placeholder: ''
+    third_party_settings: {  }
+  field_early_bird:
+    type: options_buttons
+    weight: 140
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_ends_in:
     type: entity_reference_autocomplete

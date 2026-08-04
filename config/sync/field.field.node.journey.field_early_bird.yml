@@ -1,0 +1,21 @@
+uuid: 269673c2-ca3c-46dd-ad73-3081248306c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_early_bird
+    - node.type.journey
+id: node.journey.field_early_bird
+field_name: field_early_bird
+entity_type: node
+bundle: journey
+label: Early_Bird
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
