@@ -1,0 +1,32 @@
+uuid: c9fd1e5d-62f1-4cdc-ae49-200ef778add3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.offers.field_early_bird
+    - taxonomy.vocabulary.offers
+  module:
+    - text
+id: taxonomy_term.offers.default
+targetEntityType: taxonomy_term
+bundle: offers
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_early_bird:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
