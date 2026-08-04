@@ -3,51 +3,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.inclusions_exclusions_tab.field_exclusions
-    - field.field.paragraph.inclusions_exclusions_tab.field_inclusions
+    - field.field.paragraph.inclusions_exclusions_tab.field_include_exclude
     - paragraphs.paragraphs_type.inclusions_exclusions_tab
   module:
-    - paragraphs
+    - inline_entity_form
 id: paragraph.inclusions_exclusions_tab.default
 targetEntityType: paragraph
 bundle: inclusions_exclusions_tab
 mode: default
 content:
-  field_exclusions:
-    type: paragraphs
-    weight: 1
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
-    third_party_settings: {  }
-  field_inclusions:
-    type: paragraphs
+  field_include_exclude:
+    type: inline_entity_form_simple
     weight: 0
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      revision: false
     third_party_settings: {  }
 hidden:
   created: true

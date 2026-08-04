@@ -1,19 +1,19 @@
-uuid: f04f4cf9-ae57-4269-8181-5b65330d46e0
+uuid: 6724498c-b2c6-45d2-b455-ee2b813b7aab
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - taxonomy
-id: paragraph.field_field_journey_inclusions
-field_name: field_field_journey_inclusions
+id: paragraph.field_inclusion
+field_name: field_inclusion
 entity_type: paragraph
 type: entity_reference
 settings:
   target_type: taxonomy_term
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

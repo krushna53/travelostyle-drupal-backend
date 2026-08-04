@@ -3,8 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.inclusions_exclusions_tab.field_exclusions
-    - field.field.paragraph.inclusions_exclusions_tab.field_inclusions
+    - field.field.paragraph.inclusions_exclusions_tab.field_include_exclude
     - paragraphs.paragraphs_type.inclusions_exclusions_tab
   module:
     - entity_reference_revisions
@@ -13,16 +12,7 @@ targetEntityType: paragraph
 bundle: inclusions_exclusions_tab
 mode: default
 content:
-  field_exclusions:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_inclusions:
+  field_include_exclude:
     type: entity_reference_revisions_entity_view
     label: above
     settings:

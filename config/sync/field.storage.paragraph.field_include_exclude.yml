@@ -1,12 +1,12 @@
-uuid: a0ed8037-0f89-4212-937c-b5e4bf8ced3c
+uuid: 28679f52-abfc-42f4-99ba-45c3be014988
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
-id: paragraph.field_inclusions
-field_name: field_inclusions
+id: paragraph.field_include_exclude
+field_name: field_include_exclude
 entity_type: paragraph
 type: entity_reference_revisions
 settings:

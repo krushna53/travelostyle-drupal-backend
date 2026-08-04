@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.inclusion_exclusion_item.field_descriptions
     - field.field.paragraph.inclusion_exclusion_item.field_exclusion
-    - field.field.paragraph.inclusion_exclusion_item.field_field_journey_inclusions
+    - field.field.paragraph.inclusion_exclusion_item.field_inclusion
     - paragraphs.paragraphs_type.inclusion_exclusion_item
   module:
     - text
@@ -16,7 +16,7 @@ mode: default
 content:
   field_descriptions:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 9
@@ -25,14 +25,14 @@ content:
       show_summary: false
     third_party_settings: {  }
   field_exclusion:
-    type: options_buttons
-    weight: 3
+    type: options_select
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_field_journey_inclusions:
-    type: options_buttons
-    weight: 2
+  field_inclusion:
+    type: options_select
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

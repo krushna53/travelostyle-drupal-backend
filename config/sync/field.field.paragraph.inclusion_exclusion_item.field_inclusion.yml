@@ -1,13 +1,13 @@
-uuid: 00e174b2-2be5-4515-9cf1-57d2a9c00157
+uuid: 4f879e67-4cce-420c-99f2-9a845a6904b9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_field_journey_inclusions
+    - field.storage.paragraph.field_inclusion
     - paragraphs.paragraphs_type.inclusion_exclusion_item
     - taxonomy.vocabulary.inclusion_exclusion
-id: paragraph.inclusion_exclusion_item.field_field_journey_inclusions
-field_name: field_field_journey_inclusions
+id: paragraph.inclusion_exclusion_item.field_inclusion
+field_name: field_inclusion
 entity_type: paragraph
 bundle: inclusion_exclusion_item
 label: Inclusion
@@ -17,7 +17,7 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:filter_existing_terms'
   handler_settings:
     target_bundles:
       inclusion_exclusion: inclusion_exclusion
