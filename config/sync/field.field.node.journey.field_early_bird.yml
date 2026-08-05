@@ -9,7 +9,7 @@ id: node.journey.field_early_bird
 field_name: field_early_bird
 entity_type: node
 bundle: journey
-label: Early_Bird
+label: 'Early  Bird'
 description: ''
 required: true
 translatable: false

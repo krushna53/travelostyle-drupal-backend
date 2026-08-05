@@ -1,0 +1,23 @@
+uuid: f696fb8a-740f-47b0-87c9-fd9bbca839ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field__pricing
+    - node.type.book_your_journey
+id: node.book_your_journey.field__pricing
+field_name: field__pricing
+entity_type: node
+bundle: book_your_journey
+label: 'Original Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal
