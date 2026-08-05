@@ -1,0 +1,21 @@
+uuid: 5012236d-f844-4375-9730-53d19aeea667
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_early_bird_offer
+    - node.type.book_your_journey
+id: node.book_your_journey.field_early_bird_offer
+field_name: field_early_bird_offer
+entity_type: node
+bundle: book_your_journey
+label: 'Early Bird Offer'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
