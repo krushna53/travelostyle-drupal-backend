@@ -29,7 +29,7 @@ class JourneyApiController extends ControllerBase {
   }
 
   public function getJourney(string $slug, Request $request): Response {
-    $alias = '/journeys/' . rawurldecode($slug);
+    $alias = '/journey/' . rawurldecode($slug);
     $internal_path = $this->aliasManager->getPathByAlias($alias);
 
     if (!preg_match('#^/node/(\d+)$#', $internal_path, $matches)) {
