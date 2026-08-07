@@ -6,20 +6,30 @@ dependencies:
     - field.field.paragraph.stays_tab.field_hotels
     - field.field.paragraph.stays_tab.field_stay_tab_title
     - paragraphs.paragraphs_type.stays_tab
+  module:
+    - inline_entity_form
 id: paragraph.stays_tab.default
 targetEntityType: paragraph
 bundle: stays_tab
 mode: default
 content:
   field_hotels:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     weight: 1
     region: content
     settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: optional
     third_party_settings: {  }
   field_stay_tab_title:
     type: string_textfield
