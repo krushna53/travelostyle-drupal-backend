@@ -286,16 +286,14 @@ settings:
     organization:
       override: hidden
     addressLine1:
-      override: hidden
+      override: optional
     addressLine2:
-      override: hidden
+      override: optional
     addressLine3:
       override: hidden
     sortingCode:
       override: hidden
     dependentLocality:
-      override: hidden
-    administrativeArea:
       override: hidden
   fields: {  }
 field_type: address
