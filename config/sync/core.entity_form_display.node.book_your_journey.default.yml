@@ -38,11 +38,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_offer:
-    type: string_textfield
-    weight: 7
+    type: number
+    weight: 28
     region: content
     settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_original_price:
