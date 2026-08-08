@@ -23,9 +23,30 @@ dependencies:
     - field.field.node.journey.field_starts_in
     - node.type.journey
   module:
+    - field_group
+    - inline_entity_form
     - media_library
     - paragraphs
     - path
+third_party_settings:
+  field_group:
+    group_additional_details:
+      children:
+        - status
+        - path
+      label: 'Additional Details'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        open: false
+        description: ''
+        required_fields: true
 id: node.journey.default
 targetEntityType: node
 bundle: journey
@@ -81,14 +102,22 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_ends_in:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     weight: 7
     region: content
     settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: optional
     third_party_settings: {  }
   field_group_size:
     type: number
@@ -173,24 +202,32 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_starts_in:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     weight: 6
     region: content
     settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: optional
     third_party_settings: {  }
   path:
     type: path
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 2
+    weight: 1
     region: content
     settings:
       display_label: true
