@@ -1,4 +1,4 @@
-uuid: 7cf354ae-5972-49bb-98c0-6cb8075e9ecc
+uuid: b8e09ea7-5425-400a-8b7c-5f49d5643766
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,10 @@ dependencies:
 id: node.field_offer
 field_name: field_offer
 entity_type: node
-type: string
+type: decimal
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  precision: 10
+  scale: 2
 module: core
 locked: false
 cardinality: 1

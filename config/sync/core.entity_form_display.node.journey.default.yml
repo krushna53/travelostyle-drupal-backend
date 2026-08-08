@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.journey.field_starts_in
     - node.type.journey
   module:
+    - inline_entity_form
     - media_library
     - paragraphs
     - path
@@ -81,14 +82,17 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_ends_in:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_simple
     weight: 7
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      revision: false
     third_party_settings: {  }
   field_group_size:
     type: number
@@ -173,14 +177,17 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_starts_in:
-    type: entity_reference_autocomplete
+    type: inline_entity_form_simple
     weight: 6
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      revision: false
     third_party_settings: {  }
   path:
     type: path
