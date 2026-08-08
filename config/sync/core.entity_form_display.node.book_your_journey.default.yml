@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.book_your_journey.field__pricing
     - field.field.node.book_your_journey.field_departure_date
-    - field.field.node.book_your_journey.field_early_bird_offer
+    - field.field.node.book_your_journey.field_early_bird
     - field.field.node.book_your_journey.field_journey
     - field.field.node.book_your_journey.field_offer
+    - field.field.node.book_your_journey.field_original_price
     - field.field.node.book_your_journey.field_return_date
     - field.field.node.book_your_journey.field_status
     - node.type.book_your_journey
@@ -19,22 +19,15 @@ targetEntityType: node
 bundle: book_your_journey
 mode: default
 content:
-  field__pricing:
-    type: number
-    weight: 26
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
   field_departure_date:
     type: datetime_default
     weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_early_bird_offer:
+  field_early_bird:
     type: options_buttons
-    weight: 27
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -47,6 +40,13 @@ content:
   field_offer:
     type: number
     weight: 28
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_original_price:
+    type: number
+    weight: 11
     region: content
     settings:
       placeholder: ''

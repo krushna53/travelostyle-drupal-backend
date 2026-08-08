@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:field_address:postal_code], [node:field_address:country_name], [node:field_address:locality]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.location
+new_content_behavior: 0

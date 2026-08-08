@@ -1,12 +1,12 @@
-uuid: f696fb8a-740f-47b0-87c9-fd9bbca839ef
+uuid: a6a2c3f7-78b6-4cb1-8a93-a8aa71ca1383
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field__pricing
+    - field.storage.node.field_original_price
     - node.type.book_your_journey
-id: node.book_your_journey.field__pricing
-field_name: field__pricing
+id: node.book_your_journey.field_original_price
+field_name: field_original_price
 entity_type: node
 bundle: book_your_journey
 label: 'Original Price'
