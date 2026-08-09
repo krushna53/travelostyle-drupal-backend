@@ -23,11 +23,10 @@ third_party_settings:
         - status
         - field_country
         - field_location_description
-        - field_geolocation
       label: 'Additional Details'
       region: content
       parent_name: ''
-      weight: 2
+      weight: 3
       format_type: details
       format_settings:
         classes: ''
@@ -44,7 +43,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 6
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -57,7 +56,7 @@ content:
     third_party_settings: {  }
   field_country:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 13
     region: content
     settings:
       match_operator: CONTAINS
@@ -67,14 +66,14 @@ content:
     third_party_settings: {  }
   field_geolocation:
     type: geofield_latlon
-    weight: 11
+    weight: 2
     region: content
     settings:
       html5_geolocation: false
     third_party_settings: {  }
   field_location_description:
     type: string_textarea
-    weight: 10
+    weight: 14
     region: content
     settings:
       rows: 5
@@ -82,13 +81,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 12
     region: content
     settings:
       display_label: true
@@ -103,7 +102,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
