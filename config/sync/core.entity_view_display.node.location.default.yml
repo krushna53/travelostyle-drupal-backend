@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.location.field_address
-    - field.field.node.location.field_country
     - field.field.node.location.field_geolocation
     - field.field.node.location.field_location_description
+    - field.field.node.location.field_region
     - node.type.location
   module:
     - address
@@ -24,14 +24,6 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
-  field_country:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 102
-    region: content
   field_geolocation:
     type: geofield_default
     label: above
@@ -47,6 +39,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_region:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
     region: content
   links:
     settings: {  }
