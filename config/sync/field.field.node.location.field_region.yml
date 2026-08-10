@@ -11,7 +11,7 @@ field_name: field_region
 entity_type: node
 bundle: location
 label: Region
-description: ''
+description: 'The region this location is in.'
 required: false
 translatable: false
 default_value: {  }

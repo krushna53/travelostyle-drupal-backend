@@ -11,7 +11,7 @@ field_name: field_exclusion
 entity_type: paragraph
 bundle: inclusion_exclusion_item
 label: Exclusion
-description: ''
+description: 'Fill this in if the item above is something NOT included in the trip.'
 required: false
 translatable: false
 default_value: {  }

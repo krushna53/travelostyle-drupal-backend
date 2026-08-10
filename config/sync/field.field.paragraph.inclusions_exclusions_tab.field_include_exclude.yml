@@ -13,7 +13,7 @@ field_name: field_include_exclude
 entity_type: paragraph
 bundle: inclusions_exclusions_tab
 label: 'Include / Exclude'
-description: ''
+description: 'Click "Add" for each line item and choose Inclusion or Exclusion.'
 required: false
 translatable: false
 default_value: {  }

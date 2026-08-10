@@ -10,7 +10,7 @@ field_name: field_day_title
 entity_type: paragraph
 bundle: itinerary_day
 label: 'Day Title'
-description: ''
+description: 'A short title for the day, e.g. "Casablanca Calling."'
 required: false
 translatable: false
 default_value: {  }

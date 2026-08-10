@@ -18,8 +18,8 @@ content:
     weight: 1
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: 'Info Item'
+      title_plural: 'Info Items'
       edit_mode: open
       closed_mode: summary
       autocollapse: none

@@ -10,7 +10,7 @@ field_name: field_duration_days
 entity_type: node
 bundle: journey
 label: 'Duration Days'
-description: ''
+description: 'Total number of days for the full itinerary.'
 required: false
 translatable: false
 default_value: {  }

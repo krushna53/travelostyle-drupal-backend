@@ -11,13 +11,13 @@ field_name: field_categories
 entity_type: node
 bundle: blog_detail
 label: Categories
-description: ''
+description: 'Which category this post belongs to — used for filtering on the blog listing page.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:filter_existing_terms'
   handler_settings:
     target_bundles:
       categories: categories

@@ -11,7 +11,7 @@ field_name: field_banner_image
 entity_type: node
 bundle: blog_detail
 label: 'Banner Image'
-description: ''
+description: 'Optional secondary banner, shown further down the post if used.'
 required: false
 translatable: false
 default_value: {  }

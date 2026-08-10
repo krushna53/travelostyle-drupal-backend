@@ -10,7 +10,7 @@ field_name: field_offer_price
 entity_type: node
 bundle: journey
 label: 'Offer Price'
-description: ''
+description: 'The current selling price per person (in USD), shown as "from $X". This is what customers see as the headline price.'
 required: false
 translatable: false
 default_value: {  }

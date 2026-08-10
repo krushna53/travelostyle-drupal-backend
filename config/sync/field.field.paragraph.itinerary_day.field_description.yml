@@ -14,7 +14,7 @@ field_name: field_description
 entity_type: paragraph
 bundle: itinerary_day
 label: Description
-description: ''
+description: 'What happens on this day — 2-4 sentences works well.'
 required: false
 translatable: false
 default_value: {  }

@@ -13,7 +13,7 @@ field_name: field_card_content
 entity_type: paragraph
 bundle: highlight_card
 label: 'Card Content'
-description: ''
+description: 'One highlight, e.g. "A camel ride at sunset into the Sahara." Keep it to 1-2 sentences.'
 required: false
 translatable: false
 default_value: {  }

@@ -13,7 +13,7 @@ field_name: field_days
 entity_type: paragraph
 bundle: itinerary_tab
 label: Days
-description: ''
+description: 'Click "Add Day" for each day of the trip, in order.'
 required: false
 translatable: false
 default_value: {  }

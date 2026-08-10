@@ -11,13 +11,13 @@ field_name: field_pace
 entity_type: node
 bundle: journey
 label: Pace
-description: ''
+description: 'How physically demanding the trip is — helps travelers self-select the right journey.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:filter_existing_terms'
   handler_settings:
     target_bundles:
       pace: pace

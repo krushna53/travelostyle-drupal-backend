@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Hooks for the travelostyle_api module.
+ */
+
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for node entities.
+ *
+ * The "Testimonial" content type hides its Title field from the edit form
+ * (editors only fill in "Name") — this keeps the node title in sync so
+ * admin listings and page titles still show something meaningful instead
+ * of "(no title)".
+ */
+function travelostyle_api_node_presave(NodeInterface $node) {
+  if ($node->bundle() === 'testimonial' && $node->hasField('field_testimonial_name')) {
+    $name = $node->get('field_testimonial_name')->value;
+    if (!empty($name)) {
+      $node->setTitle($name);
+    }
+  }
+}

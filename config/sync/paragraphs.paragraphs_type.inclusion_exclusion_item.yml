@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: inclusion_exclusion_item
-label: 'Inclusion Exclusion Item'
+label: 'Inclusion / Exclusion Item'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'One line item — pick whether it belongs under Inclusions or Exclusions.'
 behavior_plugins: {  }

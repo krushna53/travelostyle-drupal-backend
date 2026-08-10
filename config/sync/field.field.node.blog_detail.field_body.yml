@@ -12,7 +12,7 @@ field_name: field_body
 entity_type: node
 bundle: blog_detail
 label: Body
-description: ''
+description: 'The main blog post content.'
 required: false
 translatable: false
 default_value: {  }

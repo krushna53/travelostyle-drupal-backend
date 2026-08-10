@@ -10,7 +10,7 @@ field_name: field_original_price
 entity_type: node
 bundle: book_your_journey
 label: 'Original Price'
-description: ''
+description: 'The standard price per person for this departure, before any early-bird discount.'
 required: false
 translatable: false
 default_value: {  }

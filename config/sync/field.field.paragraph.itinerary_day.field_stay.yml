@@ -11,7 +11,7 @@ field_name: field_stay
 entity_type: paragraph
 bundle: itinerary_day
 label: Stay
-description: ''
+description: 'The hotel travelers stay at that night, if applicable.'
 required: false
 translatable: false
 default_value: {  }

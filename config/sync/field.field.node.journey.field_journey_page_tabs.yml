@@ -1,0 +1,50 @@
+uuid: 2fb99604-86bb-482b-91c2-fe81676645b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journey_page_tabs
+    - node.type.journey
+    - paragraphs.paragraphs_type.additional_information_section
+    - paragraphs.paragraphs_type.highlights_tab
+    - paragraphs.paragraphs_type.inclusions_exclusions_tab
+    - paragraphs.paragraphs_type.itinerary_tab
+    - paragraphs.paragraphs_type.stays_tab
+  module:
+    - entity_reference_revisions
+id: node.journey.field_journey_page_tabs
+field_name: field_journey_page_tabs
+entity_type: node
+bundle: journey
+label: 'Journey Page Tabs'
+description: 'Add one entry per tab you want to show on the journey page: Highlights, Itinerary, Stays, Inclusions & Exclusions, Additional Info. Each tab type should be added at most once.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      highlights_tab: highlights_tab
+      itinerary_tab: itinerary_tab
+      stays_tab: stays_tab
+      inclusions_exclusions_tab: inclusions_exclusions_tab
+      additional_information_section: additional_information_section
+    target_bundles_drag_drop:
+      additional_information_section:
+        weight: 5
+        enabled: true
+      highlights_tab:
+        weight: 1
+        enabled: true
+      inclusions_exclusions_tab:
+        weight: 4
+        enabled: true
+      itinerary_tab:
+        weight: 2
+        enabled: true
+      stays_tab:
+        weight: 3
+        enabled: true
+field_type: entity_reference_revisions

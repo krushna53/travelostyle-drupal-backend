@@ -1,6 +1,6 @@
-uuid: b0ed1c9e-7309-4400-8028-09452b15ad53
+uuid: d2493436-3a78-451a-9dd8-e856c28d41ee
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - gin
@@ -8,7 +8,7 @@ _core:
   default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg
 id: gin_secondary_local_tasks
 theme: gin
-region: header
+region: pre_content
 weight: 0
 provider: null
 plugin: local_tasks_block

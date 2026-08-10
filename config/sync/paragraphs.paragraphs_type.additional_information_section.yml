@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: additional_information_section
-label: 'Additional Information Section'
+label: 'Additional Info Tab'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Adds the "Additional Information" tab, e.g. "Things to know before you book."'
 behavior_plugins: {  }

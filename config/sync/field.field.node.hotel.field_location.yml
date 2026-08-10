@@ -11,7 +11,7 @@ field_name: field_location
 entity_type: node
 bundle: hotel
 label: Location
-description: ''
+description: 'The city/area this hotel is in.'
 required: false
 translatable: false
 default_value: {  }

@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: highlight_card
-label: 'Highlight Card'
+label: Highlight
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'A single highlight — one notable moment or feature of the trip, shown as a bullet on the Highlights tab.'
 behavior_plugins: {  }

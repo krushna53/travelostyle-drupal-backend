@@ -11,7 +11,7 @@ field_name: field_testimonial_journey
 entity_type: node
 bundle: testimonial
 label: Journey
-description: ''
+description: 'Which journey this testimonial is about. Leave blank to show it everywhere (e.g. the homepage) instead of on one specific journey page.'
 required: false
 translatable: false
 default_value: {  }

@@ -10,7 +10,7 @@ field_name: field_short_description
 entity_type: node
 bundle: journey
 label: 'Short Description'
-description: ''
+description: 'A one-sentence hook shown on journey cards and the hero banner. Keep it under 160 characters — it needs to fit on one or two lines.'
 required: false
 translatable: false
 default_value: {  }

@@ -21,57 +21,57 @@ mode: default
 content:
   field_departure_date:
     type: datetime_default
-    weight: 4
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_early_bird:
     type: options_buttons
-    weight: 20
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   field_journey:
     type: options_select
-    weight: 3
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_offer:
     type: number
-    weight: 28
+    weight: 7
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_original_price:
     type: number
-    weight: 11
+    weight: 5
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_return_date:
     type: datetime_default
-    weight: 5
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_status:
     type: options_select
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 1
+    weight: 91
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 2
+    weight: 90
     region: content
     settings:
       display_label: true
