@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.location.field_address
-    - field.field.node.location.field_country
     - field.field.node.location.field_geolocation
     - field.field.node.location.field_location_description
+    - field.field.node.location.field_region
     - node.type.location
   module:
     - address
@@ -21,12 +21,11 @@ third_party_settings:
         - created
         - path
         - status
-        - field_country
         - field_location_description
       label: 'Additional Details'
       region: content
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: details
       format_settings:
         classes: ''
@@ -43,7 +42,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -53,16 +52,6 @@ content:
     region: content
     settings:
       wrapper_type: fieldset
-    third_party_settings: {  }
-  field_country:
-    type: entity_reference_autocomplete
-    weight: 13
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_geolocation:
     type: geofield_latlon
@@ -79,15 +68,25 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_region:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   path:
     type: path
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 12
+    weight: 13
     region: content
     settings:
       display_label: true
