@@ -1,16 +1,16 @@
-uuid: 2bc9e7b0-6b71-470a-8539-7e59dc8702d9
+uuid: ed250a5e-5054-4e07-b6e5-4112d080e5d3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_region
+    - field.storage.node.field_country
     - node.type.location
-    - taxonomy.vocabulary.region
-id: node.location.field_region
-field_name: field_region
+    - taxonomy.vocabulary.country
+id: node.location.field_country
+field_name: field_country
 entity_type: node
 bundle: location
-label: Region
+label: Country
 description: ''
 required: false
 translatable: false
@@ -20,10 +20,10 @@ settings:
   handler: 'default:filter_existing_terms'
   handler_settings:
     target_bundles:
-      region: region
+      country: country
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: country
 field_type: entity_reference
