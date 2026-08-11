@@ -1,0 +1,21 @@
+uuid: b8be7f92-7f88-4871-8393-cdd9883a4e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_popular
+    - node.type.journey
+id: node.journey.field_is_popular
+field_name: field_is_popular
+entity_type: node
+bundle: journey
+label: 'Popular destination'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
