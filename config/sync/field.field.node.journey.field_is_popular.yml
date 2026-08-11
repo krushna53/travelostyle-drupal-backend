@@ -10,7 +10,7 @@ field_name: field_is_popular
 entity_type: node
 bundle: journey
 label: 'Popular destination'
-description: ''
+description: 'Turn this on to feature this journey as a "Popular" pick on the site.'
 required: true
 translatable: false
 default_value: {  }
