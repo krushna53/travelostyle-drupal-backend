@@ -8,28 +8,8 @@ dependencies:
     - field.field.node.testimonial.field_testimonial_journey
     - node.type.testimonial
   module:
-    - field_group
     - media_library
     - path
-third_party_settings:
-  field_group:
-    group_additional_details:
-      children:
-        - path
-        - status
-      label: 'Additional Details'
-      region: content
-      parent_name: ''
-      weight: 4
-      format_type: details
-      format_settings:
-        classes: ''
-        show_empty_fields: false
-        id: ''
-        label_as_html: false
-        open: false
-        description: ''
-        required_fields: true
 id: node.testimonial.default
 targetEntityType: node
 bundle: testimonial
@@ -62,13 +42,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 91
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 90
+    weight: 4
     region: content
     settings:
       display_label: true
