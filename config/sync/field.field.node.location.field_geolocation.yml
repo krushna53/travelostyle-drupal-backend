@@ -12,7 +12,7 @@ field_name: field_geolocation
 entity_type: node
 bundle: location
 label: GeoLocation
-description: ''
+description: 'Map coordinates, if this location should appear on a map.'
 required: false
 translatable: false
 default_value: {  }

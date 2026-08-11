@@ -10,7 +10,7 @@ field_name: field_group_size
 entity_type: node
 bundle: journey
 label: 'Group Size'
-description: ''
+description: 'Maximum number of guests per departure, e.g. 18. Leave blank if this journey has no group size limit.'
 required: false
 translatable: false
 default_value: {  }

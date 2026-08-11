@@ -14,6 +14,9 @@ settings:
     -
       value: available
       label: Available
+    -
+      value: soldout
+      label: 'Sold Out'
   allowed_values_function: ''
 module: options
 locked: false

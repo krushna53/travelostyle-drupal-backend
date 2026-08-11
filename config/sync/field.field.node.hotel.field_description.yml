@@ -10,7 +10,7 @@ field_name: field_description
 entity_type: node
 bundle: hotel
 label: Description
-description: ''
+description: 'A short description of the hotel/stay, shown on the journey''s "Stays" tab.'
 required: false
 translatable: false
 default_value: {  }

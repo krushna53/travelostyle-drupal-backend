@@ -11,7 +11,7 @@ field_name: field_gallery
 entity_type: node
 bundle: hotel
 label: Gallery
-description: ''
+description: 'Additional photos shown when a traveler opens this hotel for a closer look.'
 required: false
 translatable: false
 default_value: {  }

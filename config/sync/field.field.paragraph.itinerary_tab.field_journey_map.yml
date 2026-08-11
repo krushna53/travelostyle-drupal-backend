@@ -11,7 +11,7 @@ field_name: field_journey_map
 entity_type: paragraph
 bundle: itinerary_tab
 label: 'Journey Map'
-description: ''
+description: 'Optional map shown alongside the day-by-day itinerary.'
 required: false
 translatable: false
 default_value: {  }

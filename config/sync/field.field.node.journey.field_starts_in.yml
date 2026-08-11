@@ -11,7 +11,7 @@ field_name: field_starts_in
 entity_type: node
 bundle: journey
 label: 'Starts In'
-description: ''
+description: 'The city where travelers begin the journey, e.g. Casablanca.'
 required: false
 translatable: false
 default_value: {  }

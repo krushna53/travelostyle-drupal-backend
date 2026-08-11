@@ -11,7 +11,7 @@ field_name: field_hero_image
 entity_type: node
 bundle: blog_detail
 label: 'Hero Image'
-description: ''
+description: 'The large banner image shown at the very top of the blog post.'
 required: false
 translatable: false
 default_value: {  }

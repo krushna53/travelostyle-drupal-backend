@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: inclusions_exclusions_tab
-label: 'Inclusions Exclusions Tab'
+label: 'Inclusions & Exclusions Tab'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Adds the "Inclusions & Exclusions" tab to the journey page.'
 behavior_plugins: {  }

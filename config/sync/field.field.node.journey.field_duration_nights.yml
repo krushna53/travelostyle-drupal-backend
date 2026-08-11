@@ -10,7 +10,7 @@ field_name: field_duration_nights
 entity_type: node
 bundle: journey
 label: 'Duration Nights'
-description: ''
+description: 'Total number of nights (usually one less than the days).'
 required: false
 translatable: false
 default_value: {  }

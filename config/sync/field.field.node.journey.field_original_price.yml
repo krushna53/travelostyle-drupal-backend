@@ -10,7 +10,7 @@ field_name: field_original_price
 entity_type: node
 bundle: journey
 label: 'Original Price'
-description: ''
+description: 'The pre-discount price, shown crossed out next to the offer price. Leave blank if there is no discount to show.'
 required: false
 translatable: false
 default_value: {  }

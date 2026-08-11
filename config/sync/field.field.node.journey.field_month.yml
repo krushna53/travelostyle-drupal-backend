@@ -11,13 +11,13 @@ field_name: field_month
 entity_type: node
 bundle: journey
 label: Month
-description: ''
+description: 'Departure months this journey is available in.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:filter_existing_terms'
   handler_settings:
     target_bundles:
       month: month

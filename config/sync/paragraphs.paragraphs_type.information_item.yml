@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: information_item
-label: 'Information Item'
+label: 'Info Item'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'One question/topic and its answer, shown under Additional Information.'
 behavior_plugins: {  }

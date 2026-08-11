@@ -10,10 +10,12 @@ field_name: field_early_bird
 entity_type: node
 bundle: book_your_journey
 label: 'Early  Bird'
-description: ''
-required: true
+description: 'Turn this on to offer a discounted price for this specific departure date.'
+required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 0
 default_value_callback: ''
 settings:
   on_label: 'Yes'

@@ -6,5 +6,5 @@ id: stays_tab
 label: 'Stays Tab'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Adds the "Stays" tab to the journey page, listing the hotels used on this trip.'
 behavior_plugins: {  }

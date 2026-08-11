@@ -12,7 +12,7 @@ field_name: field_address
 entity_type: node
 bundle: location
 label: Address
-description: ''
+description: 'The full address or general area — used for the "Starts In" / "Ends In" display on journey pages.'
 required: false
 translatable: false
 default_value: {  }

@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: itinerary_day
-label: 'Itinerary Day'
+label: Day
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'One day of the trip. Add these in order — Day 1, Day 2, etc.'
 behavior_plugins: {  }

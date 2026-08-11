@@ -11,7 +11,7 @@ field_name: field_featured_image
 entity_type: node
 bundle: hotel
 label: 'Featured Image'
-description: ''
+description: 'The main photo used on the Stays tab card. Use a wide landscape shot.'
 required: false
 translatable: false
 default_value: {  }

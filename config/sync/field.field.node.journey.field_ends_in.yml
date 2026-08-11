@@ -11,7 +11,7 @@ field_name: field_ends_in
 entity_type: node
 bundle: journey
 label: 'Ends In'
-description: ''
+description: 'The city where travelers end the journey, e.g. Marrakech.'
 required: false
 translatable: false
 default_value: {  }

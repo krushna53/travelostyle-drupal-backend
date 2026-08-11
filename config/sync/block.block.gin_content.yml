@@ -1,6 +1,6 @@
-uuid: 118a6222-e9aa-486f-87ea-3fb01f28f6fe
+uuid: 622523fd-3e74-46e9-b182-2d8522f5a07b
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
 id: gin_content
 theme: gin
-region: header
+region: content
 weight: 0
 provider: null
 plugin: system_main_block

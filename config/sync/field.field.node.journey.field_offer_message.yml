@@ -10,7 +10,7 @@ field_name: field_offer_message
 entity_type: node
 bundle: journey
 label: 'Offer Message'
-description: ''
+description: 'A short promotional note shown in an info banner, e.g. "Early Bird offer available for August & September departures." Leave blank to hide the banner.'
 required: false
 translatable: false
 default_value: {  }

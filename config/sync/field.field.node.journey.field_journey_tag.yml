@@ -11,13 +11,13 @@ field_name: field_journey_tag
 entity_type: node
 bundle: journey
 label: 'Journey Type'
-description: ''
+description: 'Journey format — e.g. Group Journey, Private Journey. Used for the colored tag badges and the listing page filters.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
+  handler: 'default:filter_existing_terms'
   handler_settings:
     target_bundles:
       tags: tags

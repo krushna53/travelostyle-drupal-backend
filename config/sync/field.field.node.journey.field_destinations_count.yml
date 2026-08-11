@@ -10,7 +10,7 @@ field_name: field_destinations_count
 entity_type: node
 bundle: journey
 label: 'Destinations Count'
-description: ''
+description: 'How many distinct destinations/stops this journey visits — shown as a quick stat on cards.'
 required: false
 translatable: false
 default_value: {  }

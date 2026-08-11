@@ -10,7 +10,7 @@ field_name: field_offer
 entity_type: node
 bundle: book_your_journey
 label: Offer
-description: ''
+description: 'The discounted price per person if Early Bird is turned on. Ignored if Early Bird is off.'
 required: false
 translatable: false
 default_value: {  }

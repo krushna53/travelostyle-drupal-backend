@@ -12,7 +12,7 @@ field_name: field_introduction
 entity_type: node
 bundle: blog_detail
 label: Introduction
-description: ''
+description: 'A short opening paragraph shown right below the title — sets the tone for the post.'
 required: false
 translatable: false
 default_value: {  }

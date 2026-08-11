@@ -12,7 +12,7 @@ field_name: field_return_date
 entity_type: node
 bundle: book_your_journey
 label: 'Return Date'
-description: ''
+description: 'The date this group returns — used to calculate the trip length shown to travelers.'
 required: false
 translatable: false
 default_value: {  }

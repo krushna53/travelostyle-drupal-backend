@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: journey_tabs_section
-label: 'Journey Tabs Section'
+label: 'Page Tabs Container'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Legacy wrapper — no longer used directly on new journeys. New tabs are added via the flat "Journey Page Tabs" field instead.'
 behavior_plugins: {  }

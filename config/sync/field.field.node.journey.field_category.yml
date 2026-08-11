@@ -11,7 +11,7 @@ field_name: field_category
 entity_type: node
 bundle: journey
 label: Category
-description: ''
+description: 'Travel style categories, e.g. Culture & Heritage, Leisure. Shown as blue badges and used for listing page filters.'
 required: false
 translatable: false
 default_value: {  }

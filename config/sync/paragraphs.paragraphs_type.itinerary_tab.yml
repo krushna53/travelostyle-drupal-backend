@@ -6,5 +6,5 @@ id: itinerary_tab
 label: 'Itinerary Tab'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Adds the "Itinerary" tab to the journey page — the day-by-day breakdown travelers see.'
 behavior_plugins: {  }

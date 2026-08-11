@@ -13,7 +13,7 @@ field_name: field_information_item
 entity_type: paragraph
 bundle: additional_information_section
 label: 'Information Item'
-description: ''
+description: 'Click "Add Info Item" for each question/topic to include.'
 required: false
 translatable: false
 default_value: {  }

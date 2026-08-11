@@ -12,7 +12,7 @@ field_name: field_descriptions
 entity_type: paragraph
 bundle: inclusion_exclusion_item
 label: Description
-description: ''
+description: 'The line item text, e.g. "Daily breakfast" or "International flights."'
 required: false
 translatable: false
 default_value: {  }

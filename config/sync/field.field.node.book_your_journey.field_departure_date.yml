@@ -12,7 +12,7 @@ field_name: field_departure_date
 entity_type: node
 bundle: book_your_journey
 label: 'Departure Date'
-description: ''
+description: 'The date this specific group departs.'
 required: false
 translatable: false
 default_value: {  }

@@ -10,7 +10,7 @@ field_name: field_testimonial_description
 entity_type: node
 bundle: testimonial
 label: Description
-description: ''
+description: "The traveler's quote. Keep it short — 1-2 sentences (150-250 characters) reads best."
 required: false
 translatable: false
 default_value: {  }

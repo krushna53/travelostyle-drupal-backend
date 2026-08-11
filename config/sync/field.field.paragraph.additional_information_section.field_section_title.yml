@@ -10,7 +10,7 @@ field_name: field_section_title
 entity_type: paragraph
 bundle: additional_information_section
 label: 'Section Title'
-description: ''
+description: 'The tab heading, e.g. "Things to Know Before You Book."'
 required: false
 translatable: false
 default_value: {  }

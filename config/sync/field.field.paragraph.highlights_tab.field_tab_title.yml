@@ -10,7 +10,7 @@ field_name: field_tab_title
 entity_type: paragraph
 bundle: highlights_tab
 label: 'Tab Title'
-description: ''
+description: 'Optional — leave blank to use the default "Highlights" label.'
 required: false
 translatable: false
 default_value: {  }

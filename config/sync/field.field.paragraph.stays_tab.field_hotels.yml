@@ -11,7 +11,7 @@ field_name: field_hotels
 entity_type: paragraph
 bundle: stays_tab
 label: Hotels
-description: ''
+description: 'Click "Add existing" to select the hotels used on this journey.'
 required: false
 translatable: false
 default_value: {  }

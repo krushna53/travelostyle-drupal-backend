@@ -10,7 +10,7 @@ field_name: field_information_title
 entity_type: paragraph
 bundle: information_item
 label: Title
-description: ''
+description: 'The question or topic, e.g. "What should I pack?"'
 required: false
 translatable: false
 default_value: {  }
