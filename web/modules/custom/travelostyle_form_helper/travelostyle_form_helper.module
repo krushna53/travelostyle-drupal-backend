@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Contains form-alter hooks for Travelostyle content editing.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Attaches the Inclusion/Exclusion mutual-exclusion toggle to the Journey
+ * node edit form, where the inclusion_exclusion_item paragraph is edited,
+ * and validates that no taxonomy term is used as both an Inclusion and an
+ * Exclusion anywhere on the journey.
+ */
+function travelostyle_form_helper_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  if (strpos($form_id, 'node_journey_') === 0) {
+    $form['#attached']['library'][] = 'travelostyle_form_helper/inclusion_exclusion_toggle';
+    $form['#validate'][] = 'travelostyle_form_helper_validate_inclusion_exclusion';
+  }
+}
+
+/**
+ * Form validation callback: no term may be both Inclusion and Exclusion.
+ */
+function travelostyle_form_helper_validate_inclusion_exclusion(array &$form, FormStateInterface $form_state) {
+  $form_object = $form_state->getFormObject();
+  if (!$form_object instanceof \Drupal\Core\Entity\ContentEntityFormInterface) {
+    return;
+  }
+
+  $node = $form_object->getEntity();
+  if (!$node->hasField('field_journey_tabs_section')) {
+    return;
+  }
+
+  $inclusion_ids = [];
+  $exclusion_ids = [];
+
+  foreach ($node->get('field_journey_tabs_section') as $section_item) {
+    $section = $section_item->entity;
+    if (!$section || !$section->hasField('field_section_tabs')) {
+      continue;
+    }
+
+    foreach ($section->get('field_section_tabs') as $tab_item) {
+      $tab = $tab_item->entity;
+      if (!$tab || $tab->bundle() !== 'inclusions_exclusions_tab' || !$tab->hasField('field_include_exclude')) {
+        continue;
+      }
+
+      foreach ($tab->get('field_include_exclude') as $ref_item) {
+        $item = $ref_item->entity;
+        if (!$item) {
+          continue;
+        }
+        if ($item->hasField('field_inclusion') && !$item->get('field_inclusion')->isEmpty()) {
+          $inclusion_ids[] = (int) $item->get('field_inclusion')->target_id;
+        }
+        if ($item->hasField('field_exclusion') && !$item->get('field_exclusion')->isEmpty()) {
+          $exclusion_ids[] = (int) $item->get('field_exclusion')->target_id;
+        }
+      }
+    }
+  }
+
+  $duplicate_ids = array_unique(array_intersect($inclusion_ids, $exclusion_ids));
+  if (!$duplicate_ids) {
+    return;
+  }
+
+  $labels = [];
+  foreach (Term::loadMultiple($duplicate_ids) as $term) {
+    $labels[] = $term->label();
+  }
+
+  $form_state->setErrorByName('', t('The following item(s) are selected as both Inclusion and Exclusion, which is not allowed: %items', [
+    '%items' => implode(', ', $labels),
+  ]));
+}

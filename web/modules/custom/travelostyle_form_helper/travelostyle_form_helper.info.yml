@@ -1,0 +1,8 @@
+name: Travelostyle Form Helper
+type: module
+description: 'Custom editing-form behaviors for Travelostyle content, e.g. mutually exclusive Inclusion/Exclusion fields.'
+package: Custom
+core_version_requirement: ^10.2 || ^11
+dependencies:
+  - drupal:node
+  - drupal:paragraphs

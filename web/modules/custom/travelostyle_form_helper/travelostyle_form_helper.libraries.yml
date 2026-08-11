@@ -1,0 +1,7 @@
+inclusion_exclusion_toggle:
+  js:
+    js/inclusion-exclusion-toggle.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
