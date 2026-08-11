@@ -11,7 +11,9 @@ dependencies:
     - field.field.node.journey.field_early_bird
     - field.field.node.journey.field_ends_in
     - field.field.node.journey.field_group_size
+    - field.field.node.journey.field_is_popular
     - field.field.node.journey.field_journey_image
+    - field.field.node.journey.field_journey_page_tabs
     - field.field.node.journey.field_journey_tabs_section
     - field.field.node.journey.field_journey_tag
     - field.field.node.journey.field_month
@@ -19,6 +21,7 @@ dependencies:
     - field.field.node.journey.field_offer_price
     - field.field.node.journey.field_original_price
     - field.field.node.journey.field_pace
+    - field.field.node.journey.field_region
     - field.field.node.journey.field_short_description
     - field.field.node.journey.field_starts_in
     - node.type.journey
@@ -100,6 +103,16 @@ content:
     third_party_settings: {  }
     weight: 108
     region: content
+  field_is_popular:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 121
+    region: content
   field_journey_image:
     type: entity_reference_entity_view
     label: above
@@ -170,6 +183,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 114
+    region: content
+  field_region:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
     region: content
   field_short_description:
     type: basic_string
