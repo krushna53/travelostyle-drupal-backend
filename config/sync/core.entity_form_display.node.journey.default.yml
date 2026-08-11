@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.journey.field_early_bird
     - field.field.node.journey.field_ends_in
     - field.field.node.journey.field_group_size
+    - field.field.node.journey.field_is_popular
     - field.field.node.journey.field_journey_image
     - field.field.node.journey.field_journey_page_tabs
     - field.field.node.journey.field_journey_tabs_section
@@ -20,6 +21,7 @@ dependencies:
     - field.field.node.journey.field_offer_price
     - field.field.node.journey.field_original_price
     - field.field.node.journey.field_pace
+    - field.field.node.journey.field_region
     - field.field.node.journey.field_short_description
     - field.field.node.journey.field_starts_in
     - node.type.journey
@@ -38,6 +40,7 @@ third_party_settings:
         - field_journey_tag
         - field_category
         - field_early_bird
+        - field_is_popular
       label: 'Basic Info'
       region: content
       parent_name: ''
@@ -61,6 +64,7 @@ third_party_settings:
         - field_pace
         - field_best_seasons
         - field_month
+        - field_region
       label: 'Trip Details'
       region: content
       parent_name: ''
@@ -193,6 +197,13 @@ content:
     settings:
       placeholder: ''
     third_party_settings: {  }
+  field_is_popular:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_journey_image:
     type: media_library_widget
     weight: 30
@@ -257,6 +268,16 @@ content:
     weight: 16
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_region:
+    type: entity_reference_autocomplete
+    weight: 19
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_short_description:
     type: string_textarea
