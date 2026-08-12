@@ -1,0 +1,19 @@
+uuid: 7f6742b2-502d-410a-bbb5-c50028993a55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heading
+    - node.type.hero_slide
+id: node.hero_slide.field_heading
+field_name: field_heading
+entity_type: node
+bundle: hero_slide
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
