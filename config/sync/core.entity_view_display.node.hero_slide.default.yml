@@ -1,0 +1,97 @@
+uuid: eeee426a-7ef3-4a03-a503-ca9d203cc522
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hero_slide.field_button_link
+    - field.field.node.hero_slide.field_button_text
+    - field.field.node.hero_slide.field_description
+    - field.field.node.hero_slide.field_heading
+    - field.field.node.hero_slide.field_hero_banner_image
+    - field.field.node.hero_slide.field_hero_location
+    - field.field.node.hero_slide.field_tagline
+    - field.field.node.hero_slide.field_weight
+    - node.type.hero_slide
+  module:
+    - link
+    - user
+id: node.hero_slide.default
+targetEntityType: node
+bundle: hero_slide
+mode: default
+content:
+  field_button_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_button_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_heading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_hero_banner_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_hero_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_tagline:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

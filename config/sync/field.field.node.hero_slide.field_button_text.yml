@@ -1,0 +1,19 @@
+uuid: ffe7ec82-a925-4da4-b1de-5d5d625b006b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button_text
+    - node.type.hero_slide
+id: node.hero_slide.field_button_text
+field_name: field_button_text
+entity_type: node
+bundle: hero_slide
+label: 'Button Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

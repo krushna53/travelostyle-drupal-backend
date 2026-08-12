@@ -1,0 +1,19 @@
+uuid: 12f9be0d-1760-4f90-83a1-9d906be01882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tagline
+    - node.type.hero_slide
+id: node.hero_slide.field_tagline
+field_name: field_tagline
+entity_type: node
+bundle: hero_slide
+label: Tagline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
