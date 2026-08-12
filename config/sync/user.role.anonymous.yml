@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - rest.resource.webform_rest_submit
   module:
     - comment
     - filter
     - media
+    - rest
     - search
     - system
 _core:
@@ -19,6 +21,7 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'restful post webform_rest_submit'
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'
