@@ -30,10 +30,13 @@
         "drupal/inline_entity_form": "^3.0",
         "drupal/paragraphs": "^1.20",
         "drupal/pathauto": "^1.15",
+        "drupal/restui": "^1.22",
         "drupal/structure_sync": "^2.0",
         "drupal/svg_image": "^3.2",
         "drupal/taxonomy_manager": "^2.0",
         "drupal/token": "^1.17",
+        "drupal/webform": "^6.3",
+        "drupal/webform_rest": "^4.2",
         "drush/drush": "^13.7"
     },
     "conflict": {
