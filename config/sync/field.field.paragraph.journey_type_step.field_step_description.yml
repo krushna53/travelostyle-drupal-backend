@@ -1,0 +1,22 @@
+uuid: c3fb8162-d37c-4ccd-8fa1-5adca7aca47b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_step_description
+    - paragraphs.paragraphs_type.journey_type_step
+  module:
+    - text
+id: paragraph.journey_type_step.field_step_description
+field_name: field_step_description
+entity_type: paragraph
+bundle: journey_type_step
+label: 'Step Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

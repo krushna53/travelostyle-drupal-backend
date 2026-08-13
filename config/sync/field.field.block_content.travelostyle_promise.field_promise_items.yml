@@ -1,0 +1,26 @@
+uuid: 37a84ece-0a85-4ec2-93bc-685336275841
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.travelostyle_promise
+    - field.storage.block_content.field_promise_items
+    - paragraphs.paragraphs_type.promise_item
+  module:
+    - entity_reference_revisions
+id: block_content.travelostyle_promise.field_promise_items
+field_name: field_promise_items
+entity_type: block_content
+bundle: travelostyle_promise
+label: 'Promise Items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      promise_item: promise_item
+field_type: entity_reference_revisions

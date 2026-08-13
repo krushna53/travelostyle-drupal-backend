@@ -1,0 +1,43 @@
+uuid: d86125eb-fae5-46f2-88f7-9ff24a335289
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.promise_item.field_bg_color
+    - field.field.paragraph.promise_item.field_icon
+    - field.field.paragraph.promise_item.field_item_title
+    - paragraphs.paragraphs_type.promise_item
+id: paragraph.promise_item.default
+targetEntityType: paragraph
+bundle: promise_item
+mode: default
+content:
+  field_bg_color:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_item_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

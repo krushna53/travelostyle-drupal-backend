@@ -1,0 +1,23 @@
+uuid: 6d012cfc-eb9f-425c-bed2-03a73fd5e3c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_href
+    - node.type.journey_type
+  module:
+    - link
+id: node.journey_type.field_href
+field_name: field_href
+entity_type: node
+bundle: journey_type
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,22 @@
+uuid: e3d06866-54ee-4bdf-aff7-70f0f61154fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.travelostyle_promise
+    - field.storage.block_content.field_description
+  module:
+    - text
+id: block_content.travelostyle_promise.field_description
+field_name: field_description
+entity_type: block_content
+bundle: travelostyle_promise
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,54 @@
+uuid: a0ef5e0b-a53d-4e39-852d-0f03d7f2473a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.travelostyle_promise
+    - field.field.block_content.travelostyle_promise.field_description
+    - field.field.block_content.travelostyle_promise.field_heading
+    - field.field.block_content.travelostyle_promise.field_promise_items
+  module:
+    - paragraphs
+    - text
+id: block_content.travelostyle_promise.default
+targetEntityType: block_content
+bundle: travelostyle_promise
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_promise_items:
+    type: entity_reference_paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: 'Promise Item'
+      title_plural: 'Promise Items'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

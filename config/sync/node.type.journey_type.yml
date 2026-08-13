@@ -1,0 +1,11 @@
+uuid: 8b9667dd-e83b-46da-b6a5-0694a4d6691e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Journey Type'
+type: journey_type
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true
