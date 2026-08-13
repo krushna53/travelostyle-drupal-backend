@@ -1,0 +1,26 @@
+uuid: a12518bc-c131-4c03-834e-c84c7506e6ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_steps
+    - node.type.journey_type
+    - paragraphs.paragraphs_type.journey_type_step
+  module:
+    - entity_reference_revisions
+id: node.journey_type.field_steps
+field_name: field_steps
+entity_type: node
+bundle: journey_type
+label: Steps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      journey_type_step: journey_type_step
+field_type: entity_reference_revisions

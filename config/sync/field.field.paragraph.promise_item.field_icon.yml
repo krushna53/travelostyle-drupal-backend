@@ -1,0 +1,24 @@
+uuid: 17f2add8-9f70-4b66-bd03-7c6d9ff8db75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - media.type.image
+    - paragraphs.paragraphs_type.promise_item
+id: paragraph.promise_item.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: promise_item
+label: Icon
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

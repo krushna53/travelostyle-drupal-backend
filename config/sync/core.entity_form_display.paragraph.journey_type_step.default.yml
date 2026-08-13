@@ -1,0 +1,34 @@
+uuid: a7bc75da-4f95-47c1-ae1e-65e9b53a41d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.journey_type_step.field_step_description
+    - field.field.paragraph.journey_type_step.field_step_title
+    - paragraphs.paragraphs_type.journey_type_step
+  module:
+    - text
+id: paragraph.journey_type_step.default
+targetEntityType: paragraph
+bundle: journey_type_step
+mode: default
+content:
+  field_step_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_step_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

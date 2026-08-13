@@ -1,0 +1,23 @@
+uuid: 6257c9dd-4b7b-4be3-bc72-2422ed74d762
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_weight
+    - node.type.journey_type
+id: node.journey_type.field_sort_weight
+field_name: field_sort_weight
+entity_type: node
+bundle: journey_type
+label: 'Sort Weight'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,19 @@
+uuid: e4371f21-010c-451d-87ac-c3e5d6e4209e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bg_color
+    - paragraphs.paragraphs_type.promise_item
+id: paragraph.promise_item.field_bg_color
+field_name: field_bg_color
+entity_type: paragraph
+bundle: promise_item
+label: 'Background Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
