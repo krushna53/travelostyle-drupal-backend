@@ -1,0 +1,31 @@
+uuid: 0143b9fe-bc7e-4833-8a3a-d1abcbfa8aff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.why_feature.field_description
+    - field.field.paragraph.why_feature.field_item_title
+    - paragraphs.paragraphs_type.why_feature
+  module:
+    - text
+id: paragraph.why_feature.default
+targetEntityType: paragraph
+bundle: why_feature
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_item_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

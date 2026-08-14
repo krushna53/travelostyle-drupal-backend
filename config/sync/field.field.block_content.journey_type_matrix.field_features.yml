@@ -1,0 +1,26 @@
+uuid: 815693db-608b-4ad8-880e-67abde364cfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.journey_type_matrix
+    - field.storage.block_content.field_features
+    - paragraphs.paragraphs_type.matrix_feature
+  module:
+    - entity_reference_revisions
+id: block_content.journey_type_matrix.field_features
+field_name: field_features
+entity_type: block_content
+bundle: journey_type_matrix
+label: Features
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      matrix_feature: matrix_feature
+field_type: entity_reference_revisions

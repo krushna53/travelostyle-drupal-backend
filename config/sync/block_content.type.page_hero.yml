@@ -1,0 +1,8 @@
+uuid: fd7449cf-02f2-47cb-b4b3-97d7b957d457
+langcode: en
+status: true
+dependencies: {  }
+id: page_hero
+label: 'Page Hero'
+revision: true
+description: null

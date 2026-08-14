@@ -1,0 +1,71 @@
+uuid: a4003940-5702-4233-b138-4ef13b472821
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.why_take_journey
+    - field.field.block_content.why_take_journey.field_cta_button_text
+    - field.field.block_content.why_take_journey.field_cta_subtitle
+    - field.field.block_content.why_take_journey.field_cta_title
+    - field.field.block_content.why_take_journey.field_features
+    - field.field.block_content.why_take_journey.field_heading
+  module:
+    - paragraphs
+id: block_content.why_take_journey.default
+targetEntityType: block_content
+bundle: why_take_journey
+mode: default
+content:
+  field_cta_button_text:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cta_subtitle:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_cta_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_features:
+    type: entity_reference_paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

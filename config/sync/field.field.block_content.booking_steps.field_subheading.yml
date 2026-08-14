@@ -1,0 +1,19 @@
+uuid: 7d5f2859-47af-467c-a3c8-5c8e623062db
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.booking_steps
+    - field.storage.block_content.field_subheading
+id: block_content.booking_steps.field_subheading
+field_name: field_subheading
+entity_type: block_content
+bundle: booking_steps
+label: Subheading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

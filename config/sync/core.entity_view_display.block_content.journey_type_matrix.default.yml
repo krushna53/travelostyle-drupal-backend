@@ -1,0 +1,68 @@
+uuid: b2d38442-b242-431e-b614-c8459f2b0782
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.journey_type_matrix
+    - field.field.block_content.journey_type_matrix.field_badge_text
+    - field.field.block_content.journey_type_matrix.field_features
+    - field.field.block_content.journey_type_matrix.field_footer_text
+    - field.field.block_content.journey_type_matrix.field_matrix_rows
+    - field.field.block_content.journey_type_matrix.field_title_text
+    - field.field.block_content.journey_type_matrix.field_top_intro_text
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.journey_type_matrix.default
+targetEntityType: block_content
+bundle: journey_type_matrix
+mode: default
+content:
+  field_badge_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_features:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_footer_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_matrix_rows:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_title_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_top_intro_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

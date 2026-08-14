@@ -1,0 +1,8 @@
+uuid: fd3a9938-3a48-41b2-88c9-614aea9b700b
+langcode: en
+status: true
+dependencies: {  }
+id: trust_bar
+label: 'Trust Bar'
+revision: true
+description: null

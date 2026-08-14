@@ -1,0 +1,42 @@
+uuid: 8c137057-095a-4306-bb1a-0c49eda43f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.booking_steps
+    - field.field.block_content.booking_steps.field_heading
+    - field.field.block_content.booking_steps.field_steps
+    - field.field.block_content.booking_steps.field_subheading
+  module:
+    - entity_reference_revisions
+id: block_content.booking_steps.default
+targetEntityType: block_content
+bundle: booking_steps
+mode: default
+content:
+  field_heading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_steps:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subheading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

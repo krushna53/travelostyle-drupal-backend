@@ -1,0 +1,34 @@
+uuid: ae8d7bcd-0379-49e5-8c05-9aa6249569c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.why_feature.field_description
+    - field.field.paragraph.why_feature.field_item_title
+    - paragraphs.paragraphs_type.why_feature
+  module:
+    - text
+id: paragraph.why_feature.default
+targetEntityType: paragraph
+bundle: why_feature
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_item_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

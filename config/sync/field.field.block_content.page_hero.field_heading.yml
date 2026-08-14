@@ -1,0 +1,19 @@
+uuid: 607ae361-269c-40d6-88ed-c241d2f52254
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page_hero
+    - field.storage.block_content.field_heading
+id: block_content.page_hero.field_heading
+field_name: field_heading
+entity_type: block_content
+bundle: page_hero
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

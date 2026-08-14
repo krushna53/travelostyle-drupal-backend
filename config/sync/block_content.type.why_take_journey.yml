@@ -1,0 +1,8 @@
+uuid: 8f42c022-63e2-49df-8221-58c8c4024b78
+langcode: en
+status: true
+dependencies: {  }
+id: why_take_journey
+label: 'Why Take Journey'
+revision: true
+description: null

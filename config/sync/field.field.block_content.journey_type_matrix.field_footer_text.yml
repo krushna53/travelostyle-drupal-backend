@@ -1,0 +1,22 @@
+uuid: c33dd445-5a58-46ac-9f1c-f448cd97d49d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.journey_type_matrix
+    - field.storage.block_content.field_footer_text
+  module:
+    - text
+id: block_content.journey_type_matrix.field_footer_text
+field_name: field_footer_text
+entity_type: block_content
+bundle: journey_type_matrix
+label: 'Footer Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

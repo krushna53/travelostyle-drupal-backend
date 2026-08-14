@@ -1,0 +1,10 @@
+uuid: 9c6cfdbc-6458-4481-8e9e-eda9388d907f
+langcode: en
+status: true
+dependencies: {  }
+id: booking_step
+label: 'Booking Step'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

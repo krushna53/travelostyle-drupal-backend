@@ -1,0 +1,29 @@
+uuid: e41f8c70-5577-49d4-9015-437b180038e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.trust_bar
+    - field.field.block_content.trust_bar.field_trust_items
+id: block_content.trust_bar.default
+targetEntityType: block_content
+bundle: trust_bar
+mode: default
+content:
+  field_trust_items:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

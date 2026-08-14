@@ -1,0 +1,8 @@
+uuid: fbff2a0f-9b27-4019-bc23-88783937ea6d
+langcode: en
+status: true
+dependencies: {  }
+id: site_footer
+label: 'Site Footer'
+revision: true
+description: null

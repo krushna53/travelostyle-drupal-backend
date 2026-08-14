@@ -1,0 +1,26 @@
+uuid: b745f8e9-8ee3-4a5a-a4fb-16b92f3488f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.why_take_journey
+    - field.storage.block_content.field_features
+    - paragraphs.paragraphs_type.why_feature
+  module:
+    - entity_reference_revisions
+id: block_content.why_take_journey.field_features
+field_name: field_features
+entity_type: block_content
+bundle: why_take_journey
+label: Features
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      why_feature: why_feature
+field_type: entity_reference_revisions

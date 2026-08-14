@@ -1,0 +1,19 @@
+uuid: 469c45eb-f1af-48f1-9e26-20691531024d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_step_number
+    - paragraphs.paragraphs_type.booking_step
+id: paragraph.booking_step.field_step_number
+field_name: field_step_number
+entity_type: paragraph
+bundle: booking_step
+label: 'Step Number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

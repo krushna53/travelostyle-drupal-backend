@@ -1,0 +1,19 @@
+uuid: 81325bc2-2212-48fb-b8d4-ae6eb581d186
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.why_take_journey
+    - field.storage.block_content.field_cta_title
+id: block_content.why_take_journey.field_cta_title
+field_name: field_cta_title
+entity_type: block_content
+bundle: why_take_journey
+label: 'CTA Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

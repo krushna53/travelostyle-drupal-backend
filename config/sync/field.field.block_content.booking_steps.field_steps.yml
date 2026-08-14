@@ -1,0 +1,26 @@
+uuid: 267c3d60-6808-4f2f-b215-be68852f05e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.booking_steps
+    - field.storage.block_content.field_steps
+    - paragraphs.paragraphs_type.booking_step
+  module:
+    - entity_reference_revisions
+id: block_content.booking_steps.field_steps
+field_name: field_steps
+entity_type: block_content
+bundle: booking_steps
+label: Steps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      booking_step: booking_step
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+uuid: 02cd2dd8-4cc7-4f02-a51f-02b26537f52d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.journey_type_matrix
+    - field.storage.block_content.field_title_text
+  module:
+    - text
+id: block_content.journey_type_matrix.field_title_text
+field_name: field_title_text
+entity_type: block_content
+bundle: journey_type_matrix
+label: 'Title Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

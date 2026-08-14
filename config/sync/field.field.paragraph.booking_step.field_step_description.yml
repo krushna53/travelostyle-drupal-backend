@@ -1,0 +1,22 @@
+uuid: c5c06af3-5d06-4211-a287-75da8da7cb53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_step_description
+    - paragraphs.paragraphs_type.booking_step
+  module:
+    - text
+id: paragraph.booking_step.field_step_description
+field_name: field_step_description
+entity_type: paragraph
+bundle: booking_step
+label: 'Step Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

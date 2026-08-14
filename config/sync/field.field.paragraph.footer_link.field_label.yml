@@ -1,0 +1,19 @@
+uuid: 78bfdb12-6b9e-4e40-bfbb-4cf1ab1c7fd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_label
+    - paragraphs.paragraphs_type.footer_link
+id: paragraph.footer_link.field_label
+field_name: field_label
+entity_type: paragraph
+bundle: footer_link
+label: Label
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
