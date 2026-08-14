@@ -1,0 +1,19 @@
+uuid: e8806a6a-2f20-4323-a3be-48f0851ac0f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_text
+    - paragraphs.paragraphs_type.journey_type_card
+id: paragraph.journey_type_card.field_button_text
+field_name: field_button_text
+entity_type: paragraph
+bundle: journey_type_card
+label: 'Button Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

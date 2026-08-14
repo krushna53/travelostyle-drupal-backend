@@ -1,14 +1,13 @@
-uuid: 12382a5d-26ba-4e39-b0bd-4c08987b4f9d
+uuid: b12c1d3f-6871-4de3-acc6-5b40044cc17d
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
-    - node
     - paragraphs
-id: node.field_steps
-field_name: field_steps
-entity_type: node
+id: paragraph.field_card_steps
+field_name: field_card_steps
+entity_type: paragraph
 type: entity_reference_revisions
 settings:
   target_type: paragraph

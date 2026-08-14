@@ -1,0 +1,24 @@
+uuid: 0b01ee7c-d365-4017-abd1-1841cc036dde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.journey_type_card
+  module:
+    - text
+id: paragraph.journey_type_card.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: journey_type_card
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

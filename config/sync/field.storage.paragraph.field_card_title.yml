@@ -1,12 +1,12 @@
-uuid: 550d805e-cd44-47c5-860e-b009e5f5c5d4
+uuid: 9e421a0e-3bf9-40c7-bcc5-e3ed74a7c6a5
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_bg_color
-field_name: field_bg_color
-entity_type: node
+    - paragraphs
+id: paragraph.field_card_title
+field_name: field_card_title
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

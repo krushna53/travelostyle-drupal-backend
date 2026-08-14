@@ -1,0 +1,26 @@
+uuid: f72e5c11-b48c-43ee-8648-b279394af502
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.find_your_fit
+    - field.storage.block_content.field_journey_cards
+    - paragraphs.paragraphs_type.journey_type_card
+  module:
+    - entity_reference_revisions
+id: block_content.find_your_fit.field_journey_cards
+field_name: field_journey_cards
+entity_type: block_content
+bundle: find_your_fit
+label: 'Journey Cards'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      journey_type_card: journey_type_card
+field_type: entity_reference_revisions

@@ -1,12 +1,12 @@
-uuid: 086541a5-1364-4730-86f1-a3db03a4988c
+uuid: 1749f324-cd7d-4f6c-8841-93f31b58c773
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_image_quote
-field_name: field_image_quote
-entity_type: node
+    - paragraphs
+id: paragraph.field_button_text
+field_name: field_button_text
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

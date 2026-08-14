@@ -1,13 +1,13 @@
-uuid: b70d96fa-3048-4aa5-afd2-a18a1a8e7115
+uuid: d2557b69-47b0-4989-9959-bbbec5d4de63
 langcode: en
 status: true
 dependencies:
   module:
     - link
-    - node
-id: node.field_href
+    - paragraphs
+id: paragraph.field_href
 field_name: field_href
-entity_type: node
+entity_type: paragraph
 type: link
 settings: {  }
 module: link
