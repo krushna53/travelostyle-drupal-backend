@@ -1,0 +1,19 @@
+uuid: 5539396d-17a9-46b6-9f5b-02536e45fb8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_label
+    - paragraphs.paragraphs_type.matrix_row
+id: paragraph.matrix_row.field_label
+field_name: field_label
+entity_type: paragraph
+bundle: matrix_row
+label: Label
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

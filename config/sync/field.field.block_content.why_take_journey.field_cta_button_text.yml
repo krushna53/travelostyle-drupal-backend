@@ -1,0 +1,19 @@
+uuid: 812f93b4-f726-4599-9d8b-e68350cd98d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.why_take_journey
+    - field.storage.block_content.field_cta_button_text
+id: block_content.why_take_journey.field_cta_button_text
+field_name: field_cta_button_text
+entity_type: block_content
+bundle: why_take_journey
+label: 'CTA Button Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

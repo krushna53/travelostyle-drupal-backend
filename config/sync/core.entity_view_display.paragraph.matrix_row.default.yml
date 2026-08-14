@@ -1,0 +1,31 @@
+uuid: 8f86b38c-5eb6-438c-ae64-083c6d0b4d63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.matrix_row.field_label
+    - field.field.paragraph.matrix_row.field_text
+    - paragraphs.paragraphs_type.matrix_row
+  module:
+    - text
+id: paragraph.matrix_row.default
+targetEntityType: paragraph
+bundle: matrix_row
+mode: default
+content:
+  field_label:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

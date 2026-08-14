@@ -1,0 +1,22 @@
+uuid: e8d1089f-3f07-4509-b4c4-18fdae04ff41
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.journey_type_matrix
+    - field.storage.block_content.field_top_intro_text
+  module:
+    - text
+id: block_content.journey_type_matrix.field_top_intro_text
+field_name: field_top_intro_text
+entity_type: block_content
+bundle: journey_type_matrix
+label: 'Top Intro Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

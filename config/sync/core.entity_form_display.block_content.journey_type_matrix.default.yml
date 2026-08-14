@@ -1,0 +1,85 @@
+uuid: e574ba36-4728-476c-bee8-06d49d09a83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.journey_type_matrix
+    - field.field.block_content.journey_type_matrix.field_badge_text
+    - field.field.block_content.journey_type_matrix.field_features
+    - field.field.block_content.journey_type_matrix.field_footer_text
+    - field.field.block_content.journey_type_matrix.field_matrix_rows
+    - field.field.block_content.journey_type_matrix.field_title_text
+    - field.field.block_content.journey_type_matrix.field_top_intro_text
+  module:
+    - paragraphs
+    - text
+id: block_content.journey_type_matrix.default
+targetEntityType: block_content
+bundle: journey_type_matrix
+mode: default
+content:
+  field_badge_text:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_features:
+    type: entity_reference_paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_footer_text:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_matrix_rows:
+    type: entity_reference_paragraphs
+    weight: 6
+    region: content
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_title_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_top_intro_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

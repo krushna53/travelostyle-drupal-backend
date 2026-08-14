@@ -1,0 +1,24 @@
+uuid: 926b75ce-878d-4088-a2d0-ea7888c8a022
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - media.type.image
+    - paragraphs.paragraphs_type.matrix_feature
+id: paragraph.matrix_feature.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: matrix_feature
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

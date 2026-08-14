@@ -1,0 +1,26 @@
+uuid: 2074c663-a66c-4d87-81ff-6f5ed2876596
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.journey_type_matrix
+    - field.storage.block_content.field_matrix_rows
+    - paragraphs.paragraphs_type.matrix_row
+  module:
+    - entity_reference_revisions
+id: block_content.journey_type_matrix.field_matrix_rows
+field_name: field_matrix_rows
+entity_type: block_content
+bundle: journey_type_matrix
+label: 'Matrix Rows'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      matrix_row: matrix_row
+field_type: entity_reference_revisions

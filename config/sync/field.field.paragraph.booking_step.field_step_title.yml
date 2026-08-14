@@ -1,0 +1,19 @@
+uuid: 41a6dcf1-1886-4e5b-adb6-a4f2df86277e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_step_title
+    - paragraphs.paragraphs_type.booking_step
+id: paragraph.booking_step.field_step_title
+field_name: field_step_title
+entity_type: paragraph
+bundle: booking_step
+label: 'Step Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

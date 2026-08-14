@@ -1,0 +1,19 @@
+uuid: ef4a724a-c63b-400c-b789-840785692b63
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.journey_type_matrix
+    - field.storage.block_content.field_badge_text
+id: block_content.journey_type_matrix.field_badge_text
+field_name: field_badge_text
+entity_type: block_content
+bundle: journey_type_matrix
+label: 'Badge Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: 6584a7da-93d3-4870-b6de-1e3a2f569ac0
+langcode: en
+status: true
+dependencies: {  }
+id: journey_type_matrix
+label: 'Journey Type Matrix'
+revision: true
+description: null

@@ -1,0 +1,49 @@
+uuid: f9799009-7637-410f-80b1-9c747aa5ea3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.booking_step.field_bg_color
+    - field.field.paragraph.booking_step.field_step_description
+    - field.field.paragraph.booking_step.field_step_number
+    - field.field.paragraph.booking_step.field_step_title
+    - paragraphs.paragraphs_type.booking_step
+  module:
+    - text
+id: paragraph.booking_step.default
+targetEntityType: paragraph
+bundle: booking_step
+mode: default
+content:
+  field_bg_color:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_step_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_step_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_step_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,10 @@
+uuid: f5f89f59-fd00-4175-a712-f62939ce3435
+langcode: en
+status: true
+dependencies: {  }
+id: matrix_row
+label: 'Matrix Row'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

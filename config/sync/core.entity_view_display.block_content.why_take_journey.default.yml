@@ -1,0 +1,60 @@
+uuid: 99edc123-a95a-4205-b187-966e1bcc9dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.why_take_journey
+    - field.field.block_content.why_take_journey.field_cta_button_text
+    - field.field.block_content.why_take_journey.field_cta_subtitle
+    - field.field.block_content.why_take_journey.field_cta_title
+    - field.field.block_content.why_take_journey.field_features
+    - field.field.block_content.why_take_journey.field_heading
+  module:
+    - entity_reference_revisions
+id: block_content.why_take_journey.default
+targetEntityType: block_content
+bundle: why_take_journey
+mode: default
+content:
+  field_cta_button_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cta_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_cta_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_features:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_heading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

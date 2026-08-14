@@ -1,0 +1,19 @@
+uuid: 55ade0e3-3157-45b4-8e1a-18eb9b555aa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_instagram_url
+field_name: field_instagram_url
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

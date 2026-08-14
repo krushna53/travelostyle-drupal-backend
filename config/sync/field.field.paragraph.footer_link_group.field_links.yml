@@ -1,0 +1,26 @@
+uuid: 1e07b694-6f2d-4b5a-bdd0-cffb8a052f51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_links
+    - paragraphs.paragraphs_type.footer_link
+    - paragraphs.paragraphs_type.footer_link_group
+  module:
+    - entity_reference_revisions
+id: paragraph.footer_link_group.field_links
+field_name: field_links
+entity_type: paragraph
+bundle: footer_link_group
+label: Links
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      footer_link: footer_link
+field_type: entity_reference_revisions
