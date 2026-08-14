@@ -1,17 +1,17 @@
-uuid: a12518bc-c131-4c03-834e-c84c7506e6ef
+uuid: 91560959-2e58-4d81-9340-d75894ac1838
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_steps
-    - node.type.journey_type
+    - field.storage.paragraph.field_card_steps
+    - paragraphs.paragraphs_type.journey_type_card
     - paragraphs.paragraphs_type.journey_type_step
   module:
     - entity_reference_revisions
-id: node.journey_type.field_steps
-field_name: field_steps
-entity_type: node
-bundle: journey_type
+id: paragraph.journey_type_card.field_card_steps
+field_name: field_card_steps
+entity_type: paragraph
+bundle: journey_type_card
 label: Steps
 description: ''
 required: false

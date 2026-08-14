@@ -1,16 +1,16 @@
-uuid: 6d012cfc-eb9f-425c-bed2-03a73fd5e3c2
+uuid: 6ca8594e-d8a1-412e-acd2-c2f846f480ba
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_href
-    - node.type.journey_type
+    - field.storage.paragraph.field_href
+    - paragraphs.paragraphs_type.journey_type_card
   module:
     - link
-id: node.journey_type.field_href
+id: paragraph.journey_type_card.field_href
 field_name: field_href
-entity_type: node
-bundle: journey_type
+entity_type: paragraph
+bundle: journey_type_card
 label: Link
 description: ''
 required: false

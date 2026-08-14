@@ -1,0 +1,10 @@
+uuid: 6a0ca6c8-b74d-45a5-bd4a-aa007c122661
+langcode: en
+status: true
+dependencies: {  }
+id: journey_type_card
+label: 'Journey Type Card'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

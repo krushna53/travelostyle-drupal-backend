@@ -1,14 +1,14 @@
-uuid: 0f978448-88a4-4661-9099-71462127e691
+uuid: 40153e9d-183f-4ad7-97b3-6d7979a833b6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_bg_color
-    - node.type.journey_type
-id: node.journey_type.field_bg_color
+    - field.storage.paragraph.field_bg_color
+    - paragraphs.paragraphs_type.journey_type_card
+id: paragraph.journey_type_card.field_bg_color
 field_name: field_bg_color
-entity_type: node
-bundle: journey_type
+entity_type: paragraph
+bundle: journey_type_card
 label: 'Background Color'
 description: ''
 required: false

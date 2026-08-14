@@ -1,0 +1,54 @@
+uuid: 457ab2cd-bf65-4607-aa47-bc65e120ecc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.find_your_fit
+    - field.field.block_content.find_your_fit.field_description
+    - field.field.block_content.find_your_fit.field_heading
+    - field.field.block_content.find_your_fit.field_journey_cards
+  module:
+    - paragraphs
+    - text
+id: block_content.find_your_fit.default
+targetEntityType: block_content
+bundle: find_your_fit
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_journey_cards:
+    type: entity_reference_paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: 'Journey Card'
+      title_plural: 'Journey Cards'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

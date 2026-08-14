@@ -1,0 +1,42 @@
+uuid: 582ce6b4-e03d-4410-89dd-81bcae42f2c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.find_your_fit
+    - field.field.block_content.find_your_fit.field_description
+    - field.field.block_content.find_your_fit.field_heading
+    - field.field.block_content.find_your_fit.field_journey_cards
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.find_your_fit.default
+targetEntityType: block_content
+bundle: find_your_fit
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_heading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_journey_cards:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 2cf51de8-df9c-4eec-ad3d-4558dff5176f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_title
+    - paragraphs.paragraphs_type.journey_type_card
+id: paragraph.journey_type_card.field_card_title
+field_name: field_card_title
+entity_type: paragraph
+bundle: journey_type_card
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

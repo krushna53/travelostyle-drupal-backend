@@ -1,0 +1,19 @@
+uuid: 43025ba7-f4ea-457a-87ed-8b1f7d884f7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.find_your_fit
+    - field.storage.block_content.field_heading
+id: block_content.find_your_fit.field_heading
+field_name: field_heading
+entity_type: block_content
+bundle: find_your_fit
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

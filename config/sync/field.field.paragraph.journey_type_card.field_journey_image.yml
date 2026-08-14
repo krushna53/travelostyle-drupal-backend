@@ -1,15 +1,15 @@
-uuid: 56a9ccb1-3af0-4cda-871f-c0952487e7e7
+uuid: 76fc808c-42db-4042-b922-6f49af83a4bc
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_journey_image
+    - field.storage.paragraph.field_journey_image
     - media.type.image
-    - node.type.journey_type
-id: node.journey_type.field_journey_image
+    - paragraphs.paragraphs_type.journey_type_card
+id: paragraph.journey_type_card.field_journey_image
 field_name: field_journey_image
-entity_type: node
-bundle: journey_type
+entity_type: paragraph
+bundle: journey_type_card
 label: 'Journey Image'
 description: ''
 required: false

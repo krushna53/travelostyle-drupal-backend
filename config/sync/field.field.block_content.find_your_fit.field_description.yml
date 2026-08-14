@@ -1,0 +1,22 @@
+uuid: 04f66094-89d4-43b1-ae62-36e19838ffe0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.find_your_fit
+    - field.storage.block_content.field_description
+  module:
+    - text
+id: block_content.find_your_fit.field_description
+field_name: field_description
+entity_type: block_content
+bundle: find_your_fit
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
