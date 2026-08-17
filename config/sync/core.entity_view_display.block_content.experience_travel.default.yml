@@ -1,0 +1,42 @@
+uuid: 862f59e9-051d-4682-bf51-d24cfd3e6710
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.experience_travel
+    - field.field.block_content.experience_travel.field_cards
+    - field.field.block_content.experience_travel.field_description
+    - field.field.block_content.experience_travel.field_heading
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.experience_travel.default
+targetEntityType: block_content
+bundle: experience_travel
+mode: default
+content:
+  field_cards:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_heading:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

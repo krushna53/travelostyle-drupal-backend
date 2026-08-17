@@ -1,0 +1,23 @@
+uuid: 2ff2130f-492e-44eb-9229-ff2d0b83cc65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_star_count
+    - paragraphs.paragraphs_type.experience_card
+id: paragraph.experience_card.field_star_count
+field_name: field_star_count
+entity_type: paragraph
+bundle: experience_card
+label: 'Star Count'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
