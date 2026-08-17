@@ -1,0 +1,42 @@
+uuid: de038fb1-79ac-4774-b05b-e43633302430
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.experience_card.field_card_description
+    - field.field.paragraph.experience_card.field_card_title
+    - field.field.paragraph.experience_card.field_star_count
+    - paragraphs.paragraphs_type.experience_card
+  module:
+    - text
+id: paragraph.experience_card.default
+targetEntityType: paragraph
+bundle: experience_card
+mode: default
+content:
+  field_card_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_card_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_star_count:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,26 @@
+uuid: 701575de-de04-4d65-9bf0-50562704f644
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.experience_travel
+    - field.storage.block_content.field_cards
+    - paragraphs.paragraphs_type.experience_card
+  module:
+    - entity_reference_revisions
+id: block_content.experience_travel.field_cards
+field_name: field_cards
+entity_type: block_content
+bundle: experience_travel
+label: Cards
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      experience_card: experience_card
+field_type: entity_reference_revisions

@@ -1,0 +1,54 @@
+uuid: f2b6dc25-e856-4122-8c93-1cd98f7bacb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.experience_travel
+    - field.field.block_content.experience_travel.field_cards
+    - field.field.block_content.experience_travel.field_description
+    - field.field.block_content.experience_travel.field_heading
+  module:
+    - paragraphs
+    - text
+id: block_content.experience_travel.default
+targetEntityType: block_content
+bundle: experience_travel
+mode: default
+content:
+  field_cards:
+    type: entity_reference_paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Card
+      title_plural: Cards
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
