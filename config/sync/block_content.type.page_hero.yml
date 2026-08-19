@@ -5,4 +5,4 @@ dependencies: {  }
 id: page_hero
 label: 'Page Hero'
 revision: true
-description: null
+description: 'Big heading + description text shown at the top of a page, over the hero image/banner. One entry per page — pick the page from the Page dropdown (Home, Group Journeys, Tailor-made Journeys).'

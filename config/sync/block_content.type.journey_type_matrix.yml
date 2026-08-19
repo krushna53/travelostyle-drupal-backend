@@ -5,4 +5,4 @@ dependencies: {  }
 id: journey_type_matrix
 label: 'Journey Type Matrix'
 revision: true
-description: null
+description: 'The comparison table/section explaining what a journey type is and who it is for. Used on Group, Private, and Tailor-made Journeys pages — pick the page from the Journey Type dropdown.'

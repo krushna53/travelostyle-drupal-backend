@@ -9,8 +9,10 @@ dependencies:
     - field.field.block_content.why_take_journey.field_cta_title
     - field.field.block_content.why_take_journey.field_features
     - field.field.block_content.why_take_journey.field_heading
+    - field.field.block_content.why_take_journey.field_journey_type
   module:
     - entity_reference_revisions
+    - options
 id: block_content.why_take_journey.default
 targetEntityType: block_content
 bundle: why_take_journey
@@ -56,5 +58,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_journey_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -10
     region: content
 hidden: {  }
