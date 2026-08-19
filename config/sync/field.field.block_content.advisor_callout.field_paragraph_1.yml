@@ -1,0 +1,22 @@
+uuid: 2dd7ea1e-2149-48f4-9064-7e89bab013a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.advisor_callout
+    - field.storage.block_content.field_paragraph_1
+  module:
+    - text
+id: block_content.advisor_callout.field_paragraph_1
+field_name: field_paragraph_1
+entity_type: block_content
+bundle: advisor_callout
+label: 'Paragraph 1'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
