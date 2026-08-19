@@ -1,0 +1,58 @@
+uuid: 94289f5c-4e4c-47d7-9f49-61f39c3a82f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.advisor_callout
+    - field.field.block_content.advisor_callout.field_button_text
+    - field.field.block_content.advisor_callout.field_heading
+    - field.field.block_content.advisor_callout.field_paragraph_1
+    - field.field.block_content.advisor_callout.field_paragraph_2
+  module:
+    - text
+id: block_content.advisor_callout.default
+targetEntityType: block_content
+bundle: advisor_callout
+mode: default
+content:
+  field_button_text:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_paragraph_1:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_paragraph_2:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
