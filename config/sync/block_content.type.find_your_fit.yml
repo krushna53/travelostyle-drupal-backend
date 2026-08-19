@@ -5,4 +5,4 @@ dependencies: {  }
 id: find_your_fit
 label: 'Find Your Fit'
 revision: true
-description: null
+description: 'Homepage only. The ’Find Your Fit’ section with the 3 large cards (Group / Private / Tailor-made Journeys) and their booking steps.'
