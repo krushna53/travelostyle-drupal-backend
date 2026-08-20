@@ -1,0 +1,23 @@
+uuid: 73dd5e98-a223-413f-a735-872f3f2deae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.stopover_journeys
+id: node.stopover_journeys.field_price
+field_name: field_price
+entity_type: node
+bundle: stopover_journeys
+label: Price
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

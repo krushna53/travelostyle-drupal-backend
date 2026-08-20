@@ -1,0 +1,23 @@
+uuid: 0810906a-29c1-4469-976b-59ebd033c886
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_days
+    - node.type.stopover_journeys
+id: node.stopover_journeys.field_days
+field_name: field_days
+entity_type: node
+bundle: stopover_journeys
+label: Days
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
