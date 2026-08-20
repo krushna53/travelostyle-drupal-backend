@@ -9,6 +9,7 @@ dependencies:
     - field.field.block_content.page_hero.field_image
     - field.field.block_content.page_hero.field_page_key
   module:
+    - options
     - text
 id: block_content.page_hero.default
 targetEntityType: block_content
@@ -39,11 +40,10 @@ content:
     weight: 4
     region: content
   field_page_key:
-    type: string
+    type: list_default
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 5
     region: content
 hidden: {  }
