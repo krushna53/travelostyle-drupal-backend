@@ -1,16 +1,16 @@
-uuid: 63746ef5-1382-4548-85b8-9bdb4b9a4178
+uuid: 55ade0e3-3157-45b4-8e1a-18eb9b555aa4
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-    - text
-id: block_content.field_paragraph_2
-field_name: field_paragraph_2
+    - link
+id: block_content.field_instagram_url
+field_name: field_instagram_url
 entity_type: block_content
-type: text_long
+type: link
 settings: {  }
-module: text
+module: link
 locked: false
 cardinality: 1
 translatable: true

@@ -1,12 +1,10 @@
-uuid: 276f65b3-c7fe-4a64-abda-c9c978934a50
+uuid: 3bbb2cb2-572b-4a72-a292-5d51fd9bafbb
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.page_hero
     - field.storage.block_content.field_page_key
-  module:
-    - options
 id: block_content.page_hero.field_page_key
 field_name: field_page_key
 entity_type: block_content
@@ -18,4 +16,4 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string

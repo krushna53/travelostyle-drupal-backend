@@ -9,7 +9,6 @@ dependencies:
     - field.field.block_content.why_take_journey.field_cta_title
     - field.field.block_content.why_take_journey.field_features
     - field.field.block_content.why_take_journey.field_heading
-    - field.field.block_content.why_take_journey.field_journey_type
   module:
     - paragraphs
 id: block_content.why_take_journey.default
@@ -60,12 +59,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_journey_type:
-    type: options_select
-    weight: -10
-    region: content
-    settings: {  }
     third_party_settings: {  }
   info:
     type: string_textfield

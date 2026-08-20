@@ -5,4 +5,4 @@ dependencies: {  }
 id: booking_steps
 label: 'Booking Steps'
 revision: true
-description: 'The numbered ’How to book’ steps section (Browse, Confirm Details, Complete booking, etc). Used on Group, Private, and Tailor-made Journeys pages — pick the page from the Journey Type dropdown.'
+description: null

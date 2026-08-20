@@ -40,10 +40,12 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_page_key:
-    type: options_select
-    weight: 26
+    type: string_textfield
+    weight: 1
     region: content
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   info:
     type: string_textfield

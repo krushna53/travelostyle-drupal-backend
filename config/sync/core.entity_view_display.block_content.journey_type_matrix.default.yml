@@ -7,13 +7,11 @@ dependencies:
     - field.field.block_content.journey_type_matrix.field_badge_text
     - field.field.block_content.journey_type_matrix.field_features
     - field.field.block_content.journey_type_matrix.field_footer_text
-    - field.field.block_content.journey_type_matrix.field_journey_type
     - field.field.block_content.journey_type_matrix.field_matrix_rows
     - field.field.block_content.journey_type_matrix.field_title_text
     - field.field.block_content.journey_type_matrix.field_top_intro_text
   module:
     - entity_reference_revisions
-    - options
     - text
 id: block_content.journey_type_matrix.default
 targetEntityType: block_content
@@ -43,13 +41,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
-    region: content
-  field_journey_type:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: -10
     region: content
   field_matrix_rows:
     type: entity_reference_revisions_entity_view

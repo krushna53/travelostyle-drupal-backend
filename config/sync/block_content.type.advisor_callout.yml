@@ -1,8 +1,0 @@
-uuid: 73e237ce-e428-4ee4-860a-23609b3be73e
-langcode: en
-status: true
-dependencies: {  }
-id: advisor_callout
-label: 'Advisor Callout'
-revision: true
-description: 'The ’Not sure yet? That’s okay!’ section near the bottom of the page, prompting visitors to talk to a travel advisor. Used on Group and Private Journeys pages — pick the page from the Journey Type dropdown.'

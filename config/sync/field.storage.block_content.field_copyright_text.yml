@@ -1,11 +1,11 @@
-uuid: 72b8ad2e-fd38-4f58-9ff7-66e9c0e787a1
+uuid: 642fe63d-0a14-4ad6-aa7e-83ef1bcee363
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-id: block_content.field_page_key
-field_name: field_page_key
+id: block_content.field_copyright_text
+field_name: field_copyright_text
 entity_type: block_content
 type: string
 settings:

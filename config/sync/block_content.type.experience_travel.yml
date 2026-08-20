@@ -5,4 +5,4 @@ dependencies: {  }
 id: experience_travel
 label: 'Experience Travel Section'
 revision: true
-description: 'Homepage only. The ’Experience travel the way it should be with TravelOStyle’ section with the 4 small cards (Destination Knowledge, Operational Care, Response Speed, Ground Support).'
+description: null

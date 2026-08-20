@@ -1,0 +1,77 @@
+uuid: f9273a71-4143-4cb2-8ced-cbd597f42cc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.site_footer
+    - field.field.block_content.site_footer.field_copyright_text
+    - field.field.block_content.site_footer.field_email
+    - field.field.block_content.site_footer.field_facebook_url
+    - field.field.block_content.site_footer.field_instagram_url
+    - field.field.block_content.site_footer.field_link_groups
+    - field.field.block_content.site_footer.field_phone
+  module:
+    - entity_reference_revisions
+    - link
+id: block_content.site_footer.default
+targetEntityType: block_content
+bundle: site_footer
+mode: default
+content:
+  field_copyright_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_facebook_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_instagram_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_link_groups:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

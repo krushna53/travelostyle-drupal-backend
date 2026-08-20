@@ -24,7 +24,6 @@ dependencies:
     - field.field.node.journey.field_region
     - field.field.node.journey.field_short_description
     - field.field.node.journey.field_starts_in
-    - field.field.node.journey.field_stopover_journey
     - node.type.journey
   module:
     - entity_reference_revisions
@@ -207,14 +206,6 @@ content:
       link: true
     third_party_settings: {  }
     weight: 105
-    region: content
-  field_stopover_journey:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 122
     region: content
   links:
     settings: {  }

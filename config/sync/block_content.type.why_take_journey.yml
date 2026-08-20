@@ -5,4 +5,4 @@ dependencies: {  }
 id: why_take_journey
 label: 'Why Take Journey'
 revision: true
-description: 'The ’Why take a [group/private] journey with TravelOStyle?’ section with 5 feature cards and a call-to-action banner. Used on Group and Private Journeys pages — pick the page from the Journey Type dropdown.'
+description: null
