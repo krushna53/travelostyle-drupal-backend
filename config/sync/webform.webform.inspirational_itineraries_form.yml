@@ -59,14 +59,6 @@ elements: |-
       '#options':
         'I would like to explore different accommodation categories or stay styles': 'I would like to explore different accommodation categories or stay styles'
         'I would like to adjust how relaxed or packed the journey feels': 'I would like to adjust how relaxed or packed the journey feels'
-    stopovers:
-      '#type': checkboxes
-      '#title': Stopovers
-      '#options':
-        dubai-2n: 'Dubai (2 Nights)'
-        mumbai-2n: 'Mumbai (2 Nights)'
-        singapore-2n: 'Singapore (2 Nights)'
-        doha-2n: 'Doha (2 Nights)'
     discuss_custom_stopovers:
       '#type': checkbox
       '#title': 'Discuss custom stopovers'
@@ -112,6 +104,10 @@ elements: |-
       '#type': checkbox
       '#title': 'Consent to terms'
       '#required': true
+  stopovers:
+    '#type': textfield
+    '#title': Stopovers
+    '#multiple': true
 css: ''
 javascript: ''
 settings:

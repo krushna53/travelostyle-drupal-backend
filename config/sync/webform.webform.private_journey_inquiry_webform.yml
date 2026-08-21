@@ -79,15 +79,6 @@ elements: |-
       'I would like to explore different travel dates': 'I would like to explore different travel dates'
       'I am traveling with an infant and require some guidance': 'I am traveling with an infant and require some guidance'
       'I would like to customize another part of the trip which is not listed above': 'I would like to customize another part of the trip which is not listed above'
-  stopovers:
-    '#type': checkboxes
-    '#title': Stopovers
-    '#options':
-      dubai-3d2n: 'Dubai, U.A.E (3 Days, 2 Nights)'
-      muscat-3d2n: 'Muscat, Oman (3 Days, 2 Nights)'
-      mumbai-3d2n: 'Mumbai, India (3 Days, 2 Nights)'
-      mumbai-2n: 'Mumbai, India (2 Nights)'
-      dubai-5d4n: 'Dubai, U.A.E (5 Days, 4 Nights)'
   discuss_custom_stopovers:
     '#type': checkbox
     '#title': 'I would like to discuss custom stopover options'
@@ -117,6 +108,10 @@ elements: |-
     '#type': checkbox
     '#title': 'I agree to be contacted by TravelOStyle regarding my inquiry.'
     '#required': true
+  stopovers:
+    '#type': textfield
+    '#title': Stopovers
+    '#multiple': true
 css: ''
 javascript: ''
 settings:
