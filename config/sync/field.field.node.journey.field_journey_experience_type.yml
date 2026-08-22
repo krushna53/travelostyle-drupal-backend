@@ -1,0 +1,29 @@
+uuid: 32fb6732-45b8-4ea4-9fe2-e294050248a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_journey_experience_type
+    - node.type.journey
+    - taxonomy.vocabulary.journey_experience_type
+id: node.journey.field_journey_experience_type
+field_name: field_journey_experience_type
+entity_type: node
+bundle: journey
+label: 'Journey Experience Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:filter_existing_terms'
+  handler_settings:
+    target_bundles:
+      journey_experience_type: journey_experience_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.journey.field_ends_in
     - field.field.node.journey.field_group_size
     - field.field.node.journey.field_is_popular
+    - field.field.node.journey.field_journey_experience_type
     - field.field.node.journey.field_journey_image
     - field.field.node.journey.field_journey_page_tabs
     - field.field.node.journey.field_journey_tabs_section
@@ -113,6 +114,14 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     weight: 121
+    region: content
+  field_journey_experience_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 123
     region: content
   field_journey_image:
     type: entity_reference_entity_view

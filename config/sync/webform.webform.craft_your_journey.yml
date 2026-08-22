@@ -16,10 +16,34 @@ elements: |-
   step_1_destination_experience:
     '#type': webform_wizard_page
     '#title': 'Destination & Experience'
+    journeytype:
+      '#type': entity_autocomplete
+      '#title': journeytype
+      '#multiple': true
+      '#target_type': taxonomy_term
+      '#selection_handler': 'default:taxonomy_term'
+      '#selection_settings':
+        target_bundles:
+          journey_style: journey_style
+        sort:
+          field: name
+          direction: asc
+        auto_create: false
+        auto_create_bundle: ''
     destination:
-      '#type': textfield
+      '#type': entity_autocomplete
       '#title': Destination
-      '#required': true
+      '#target_type': node
+      '#selection_handler': 'default:node'
+      '#selection_settings':
+        target_bundles:
+          journey: journey
+        sort:
+          field: nid
+          direction: ASC
+    journey_id:
+      '#type': hidden
+      '#title': 'Journey ID'
     experiences:
       '#type': checkboxes
       '#title': Experiences
@@ -139,6 +163,17 @@ elements: |-
       '#type': checkbox
       '#title': 'I agree to the privacy policy and terms'
       '#required': true
+  journey_departure:
+    '#type': entity_autocomplete
+    '#title': 'Journey Departure'
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        book_your_journey: book_your_journey
+      sort:
+        field: field_departure_date
+        direction: ASC
 css: ''
 javascript: ''
 settings:

@@ -1,0 +1,9 @@
+uuid: b19f2882-3446-4984-9340-257cedfa062a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Journey Experience Type'
+vid: journey_experience_type
+description: null
+weight: 0
+new_revision: false
