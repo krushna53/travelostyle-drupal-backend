@@ -13,6 +13,31 @@ title: 'Group Trip Inquiry Webform'
 description: ''
 categories: {  }
 elements: |-
+  journeytype:
+    '#type': entity_autocomplete
+    '#title': journeytype
+    '#multiple': true
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        journey_style: journey_style
+      sort:
+        field: name
+        direction: asc
+      auto_create: false
+      auto_create_bundle: ''
+  destination:
+    '#type': entity_autocomplete
+    '#title': Destination
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        journey: journey
+      sort:
+        field: nid
+        direction: ASC
   journey_id:
     '#type': hidden
     '#title': 'Journey ID'
@@ -73,6 +98,17 @@ elements: |-
     '#type': checkbox
     '#title': 'I agree to be contacted by TravelOStyle regarding my inquiry.'
     '#required': true
+  journey_departure:
+    '#type': entity_autocomplete
+    '#title': 'Journey Departure'
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        book_your_journey: book_your_journey
+      sort:
+        field: field_departure_date
+        direction: ASC
 css: ''
 javascript: ''
 settings:

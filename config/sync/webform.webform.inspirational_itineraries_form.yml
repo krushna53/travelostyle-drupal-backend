@@ -13,6 +13,31 @@ title: 'Inspirational Itineraries Form'
 description: ''
 categories: {  }
 elements: |-
+  journeytype:
+    '#type': entity_autocomplete
+    '#title': journeytype
+    '#multiple': true
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        journey_style: journey_style
+      sort:
+        field: name
+        direction: asc
+      auto_create: false
+      auto_create_bundle: ''
+  destination:
+    '#type': entity_autocomplete
+    '#title': Destination
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        journey: journey
+      sort:
+        field: nid
+        direction: ASC
   journey_details:
     '#type': fieldset
     '#title': 'Selected Journey Details'
@@ -108,6 +133,17 @@ elements: |-
     '#type': textfield
     '#title': Stopovers
     '#multiple': true
+  journey_departure:
+    '#type': entity_autocomplete
+    '#title': 'Journey Departure'
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        book_your_journey: book_your_journey
+      sort:
+        field: field_departure_date
+        direction: ASC
 css: ''
 javascript: ''
 settings:

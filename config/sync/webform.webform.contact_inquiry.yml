@@ -13,6 +13,31 @@ title: 'Contact Inquiry'
 description: '<p>TravelOStyle Contact Inquiry Form</p>'
 categories: {  }
 elements: |-
+  journeytype:
+    '#type': entity_autocomplete
+    '#title': journeytype
+    '#multiple': true
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        journey_style: journey_style
+      sort:
+        field: name
+        direction: asc
+      auto_create: false
+      auto_create_bundle: ''
+  destination:
+    '#type': entity_autocomplete
+    '#title': Destination
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        journey: journey
+      sort:
+        field: nid
+        direction: ASC
   first_name:
     '#type': textfield
     '#title': 'First Name'
@@ -53,6 +78,17 @@ elements: |-
     '#title': Consent
     '#required': true
     '#required_error': '"consent is required"'
+  journey_departure:
+    '#type': entity_autocomplete
+    '#title': 'Journey Departure'
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        book_your_journey: book_your_journey
+      sort:
+        field: field_departure_date
+        direction: ASC
 css: ''
 javascript: ''
 settings:

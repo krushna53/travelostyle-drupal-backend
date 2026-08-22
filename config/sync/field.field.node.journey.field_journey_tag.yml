@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_journey_tag
     - node.type.journey
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.journey_style
 id: node.journey.field_journey_tag
 field_name: field_journey_tag
 entity_type: node
@@ -20,7 +20,7 @@ settings:
   handler: 'default:filter_existing_terms'
   handler_settings:
     target_bundles:
-      tags: tags
+      journey_style: journey_style
     sort:
       field: name
       direction: asc

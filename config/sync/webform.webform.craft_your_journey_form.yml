@@ -1,0 +1,374 @@
+uuid: 50d58315-d5d9-4b39-adff-1abfbd4bbf6d
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: null
+template: false
+archive: false
+id: craft_your_journey_form
+title: 'Craft Your Journey Form'
+description: 'Build Your Journey With Us - single page inquiry form'
+categories: {  }
+elements: |-
+  form_intro:
+    '#type': webform_markup
+    '#markup': '<h3>Build Your Journey With Us</h3>'
+  destination_section:
+    '#type': webform_section
+    '#title': 'What about the world are you ready to explore?'
+    destination:
+      '#type': entity_autocomplete
+      '#title': 'Where do you want to go?'
+      '#placeholder': 'Search your destination'
+      '#description': "Simply select a place you like, if there's a better option out there, we'll recommend it to you."
+      '#target_type': node
+      '#selection_handler': 'default:node'
+      '#selection_settings':
+        target_bundles:
+          journey: journey
+    experience_types:
+      '#type': checkboxes
+      '#title': 'What kind of experiences are you looking for?'
+      '#options':
+        adventure: Adventure
+        nature_wildlife: 'Nature & Wildlife'
+        safaris: Safaris
+        camping: Camping
+        culture_history: 'Culture & History'
+        festivals: Festivals
+        culinary: 'Culinary (Food & Drink)'
+        beaches: Beaches
+        coastal: Coastal
+        city_life: 'City Life'
+        luxury_escapes: 'Luxury Escapes'
+        family_focused: 'Family-focused'
+        cruises: Cruises
+        private_jet_journeys: 'Private Jet Journeys'
+        rail_journeys: 'Rail Journeys'
+  guests_section:
+    '#type': webform_section
+    '#title': "Who's joining in on the fun?"
+    guests_flexbox:
+      '#type': webform_flexbox
+      adults:
+        '#type': number
+        '#title': Adults
+        '#min': 0
+        '#default_value': 0
+        '#flex': 1
+      children:
+        '#type': number
+        '#title': Children
+        '#min': 0
+        '#default_value': 0
+        '#flex': 1
+    travel_duration:
+      '#type': radios
+      '#title': 'For how long do you want to travel?'
+      '#options':
+        2_5_days: '2-5 Days'
+        6_10_days: '6-10 Days'
+        11_20_days: '11-20 Days'
+        20_plus_days: '20+ Days'
+  tailor_trip_section:
+    '#type': webform_section
+    '#title': "Let's tailor the trip to you. What would you like to talk about?"
+    '#help': 'Choose all that applies to you'
+    tailor_trip_topics:
+      '#type': checkboxes
+      '#title': 'What would you like to talk about?'
+      '#title_display': invisible
+      '#options':
+        accommodation_type: 'I want to discuss my ideal accommodation type'
+        journey_pace: 'I want to discuss the pace of my journey'
+        private_rate: "I'm traveling with my own group and would like a private rate"
+        recommend_experiences: 'I want you to recommend sights, activities, or experiences'
+        special_needs: 'I have dietary, accessibility, rooming, or other travel needs which I would like to discuss'
+        flexible_budget: 'My budget is flexible for the right experience'
+        explore_dates: 'I want to explore different travel dates'
+        traveling_with_infant: 'I am traveling with an infant and require some guidance'
+        recommend_destinations: 'I want you to recommend more destinations and/or stopovers'
+  trip_reason_section:
+    '#type': webform_section
+    '#title': 'Why are you taking this trip?'
+    trip_reason:
+      '#type': radios
+      '#title': 'Why are you taking this trip?'
+      '#title_display': invisible
+      '#options':
+        honeymoon: Honeymoon
+        birthday: Birthday
+        babymoon: Babymoon
+        anniversary: Anniversary
+        family_trip_1: 'Family Trip'
+        bucket_list: 'Bucket List'
+        graduation: Graduation
+        friend_trip: 'Friend Trip'
+        family_trip_2: 'Family Trip'
+        love_to_travel: 'Because I love to travel'
+    expert_notes:
+      '#type': textarea
+      '#title': "What's something you would like our expert to know?"
+      '#placeholder': 'Do you have questions? Quirks? Preferences? or special considerations that you would like us to keep in mind? Tell us everything! The more we know, the better we can help.'
+      '#rows': 4
+  budget_section:
+    '#type': webform_section
+    '#title': "Let's make it a reality!"
+    budget_flexbox:
+      '#type': webform_flexbox
+      budget_amount:
+        '#type': textfield
+        '#title': "What's your budget for the trip? (/person)"
+        '#placeholder': 'Specify Budget Amount in USD.'
+        '#flex': 1
+      budget_includes_flights:
+        '#type': radios
+        '#title': 'Does this budget include flight tickets?'
+        '#options':
+          yes: Yes
+          no: No
+        '#default_value': no
+        '#flex': 1
+    budget_range:
+      '#type': radios
+      '#title': 'OR select a range'
+      '#options':
+        2500_4000: '$2500-4000'
+        4000_6000: '$4000-6000'
+        6000_8000: '$6000-8000'
+        8000_plus: '$8000+'
+    booking_assistance_flexbox:
+      '#type': webform_flexbox
+      require_booking_assistance:
+        '#type': radios
+        '#title': 'Do you require assistance with flight bookings?'
+        '#options':
+          yes: Yes
+          no: No
+        '#default_value': no
+        '#flex': 1
+      budget_preference:
+        '#type': radios
+        '#title': 'What feels right?'
+        '#options':
+          best_within_budget: 'I want to experience the best I can within my budget'
+          open_to_increasing: 'I am open to increasing my budget for the right set of experiences'
+        '#flex': 1
+  contact_section:
+    '#type': webform_section
+    '#title': 'Finally, tell us how to connect with you'
+    contact_name_flexbox:
+      '#type': webform_flexbox
+      first_name:
+        '#type': textfield
+        '#title': 'First Name'
+        '#placeholder': 'Your First Name'
+        '#required': true
+        '#flex': 1
+      last_name:
+        '#type': textfield
+        '#title': 'Last Name'
+        '#placeholder': 'Your Last Name'
+        '#flex': 1
+    contact_title_flexbox:
+      '#type': webform_flexbox
+      title:
+        '#type': select
+        '#title': Title
+        '#placeholder': 'Select your title'
+        '#required': true
+        '#options':
+          mr: Mr.
+          mrs: Mrs.
+          ms: Ms.
+          mx: Mx.
+          dr: Dr.
+        '#flex': 1
+      phone_number:
+        '#type': tel
+        '#title': 'Number/ WhatsApp'
+        '#placeholder': 'Your Mobile Number'
+        '#flex': 1
+    email:
+      '#type': email
+      '#title': 'Email ID'
+      '#placeholder': 'Your Email ID'
+      '#required': true
+    agree_to_contact:
+      '#type': checkbox
+      '#title': 'I agree to be contacted by TravelOStyle regarding my inquiry.'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: false
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: message
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: |-
+    <strong>Inquiry Submitted!</strong><br/>
+    Your inquiry has been received by team TravelOStyle. We typically respond within 48hrs. Your details are never shared with third parties.
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: 'Explore More Journeys'
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+  form_confidential_attribute_name: ''
+  submission_view_any: false
+  submission_update_any: false
+  submission_delete_any: false
+  submission_purge: none
+  submission_purge_days: null
+  submission_purge_status: null
+access: {  }
+handlers:
+  email_notification:
+    id: email
+    handler_id: email_notification
+    label: 'Email Notification'
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: default
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: '[webform_submission:values:email:raw]'
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+      to_mail_message: ''
+      bcc_mail_message: ''
+      cc_mail_message: ''
+      from_mail_message: ''
+      from_name_message: ''
+      reply_to_message: ''
+      return_path_message: ''
+      sender_mail_message: ''
+      sender_name_message: ''
+      subject_message: ''
+      body_message: ''
+variants: {  }
