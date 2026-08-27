@@ -8,12 +8,13 @@ dependencies:
     - field.field.node.hero_slide.field_description
     - field.field.node.hero_slide.field_heading
     - field.field.node.hero_slide.field_hero_banner_image
-    - field.field.node.hero_slide.field_hero_location
+    - field.field.node.hero_slide.field_location_label
     - field.field.node.hero_slide.field_tagline
     - field.field.node.hero_slide.field_weight
     - node.type.hero_slide
   module:
     - link
+    - svg_image
     - user
 id: node.hero_slide.default
 targetEntityType: node
@@ -56,21 +57,27 @@ content:
     weight: 101
     region: content
   field_hero_banner_image:
-    type: entity_reference_entity_view
+    type: image
     label: above
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings: {  }
-    weight: 103
+    weight: 109
     region: content
-  field_hero_location:
-    type: entity_reference_label
+  field_location_label:
+    type: string
     label: above
     settings:
-      link: true
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 106
+    weight: 108
     region: content
   field_tagline:
     type: string

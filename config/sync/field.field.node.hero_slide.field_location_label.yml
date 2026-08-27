@@ -1,0 +1,19 @@
+uuid: da066d51-4368-4620-8501-0447d451ccc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_label
+    - node.type.hero_slide
+id: node.hero_slide.field_location_label
+field_name: field_location_label
+entity_type: node
+bundle: hero_slide
+label: Location_label
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,16 +1,17 @@
-uuid: 3a5b4621-779e-4290-9629-b70372c0c9e6
+uuid: 0866a683-21c6-4049-8920-3d140b84fa2c
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_hero_location
-field_name: field_hero_location
+id: node.field_location_label
+field_name: field_location_label
 entity_type: node
-type: entity_reference
+type: string
 settings:
-  target_type: taxonomy_term
+  max_length: 180
+  case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1
