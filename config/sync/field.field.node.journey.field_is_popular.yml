@@ -11,7 +11,7 @@ entity_type: node
 bundle: journey
 label: 'Popular destination'
 description: 'Turn this on to feature this journey as a "Popular" pick on the site.'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
