@@ -12,7 +12,7 @@ entity_type: node
 bundle: journey
 label: 'Journey Type'
 description: 'Journey format — e.g. Group Journey, Private Journey. Used for the colored tag badges and the listing page filters.'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
