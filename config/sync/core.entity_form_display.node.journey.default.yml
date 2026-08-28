@@ -114,7 +114,7 @@ third_party_settings:
         formatter: closed
     group_page_content:
       children:
-        - field_journey_page_tabs
+        - field_journey_tabs_section
       label: 'Page Content (Tabs)'
       region: content
       parent_name: ''
@@ -220,23 +220,25 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_journey_page_tabs:
+  field_journey_tabs_section:
     type: paragraphs
     weight: 40
     region: content
     settings:
-      title: Tab
-      title_plural: Tabs
+      title: Paragraph
+      title_plural: Paragraphs
       edit_mode: open
       closed_mode: summary
       autocollapse: none
       closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: journey_tabs_section
       features:
+        add_above: add_above
         collapse_edit_all: collapse_edit_all
-        duplicate: ''
+        convert: '0'
+        duplicate: duplicate
     third_party_settings: {  }
   field_journey_tag:
     type: options_buttons
@@ -347,7 +349,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_journey_tabs_section: true
+  field_journey_page_tabs: true
   promote: true
   sticky: true
   uid: true
