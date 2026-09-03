@@ -1,0 +1,21 @@
+uuid: 8447b679-e156-4638-93cd-fa1010f29065
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ispopular
+    - node.type.location
+id: node.location.field_ispopular
+field_name: field_ispopular
+entity_type: node
+bundle: location
+label: ispopular
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
