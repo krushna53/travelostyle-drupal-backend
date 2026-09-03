@@ -1,0 +1,21 @@
+uuid: 4819f0a5-f7df-4a6a-94bd-b8fa6a252f5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ispopular
+    - taxonomy.vocabulary.region
+id: taxonomy_term.region.field_ispopular
+field_name: field_ispopular
+entity_type: taxonomy_term
+bundle: region
+label: ispopular
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
