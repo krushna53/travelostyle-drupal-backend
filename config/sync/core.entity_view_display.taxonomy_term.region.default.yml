@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.region.field_ispopular
+    - field.field.taxonomy_term.region.field_months
     - field.field.taxonomy_term.region.field_region_image
     - taxonomy.vocabulary.region
   module:
@@ -18,6 +20,24 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_ispopular:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_months:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_region_image:
     type: entity_reference_entity_view
