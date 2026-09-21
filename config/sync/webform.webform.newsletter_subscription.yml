@@ -23,10 +23,9 @@ elements: |-
     '#title': 'Email ID'
     '#required': true
     '#placeholder': 'Your Email ID'
-  i_agree_to_receive_news_updates_and_more_from_travelostyle:
+  consent:
     '#type': checkbox
-    '#title': 'I agree to receive news, updates and more from TravelOStyle'
-    '#required': false
+    '#title': Consent
   actions:
     '#type': webform_actions
     '#title': 'Submit Button(s)'
