@@ -26,6 +26,7 @@ elements: |-
   consent:
     '#type': checkbox
     '#title': Consent
+    '#required': true
   actions:
     '#type': webform_actions
     '#title': 'Submit Button(s)'
