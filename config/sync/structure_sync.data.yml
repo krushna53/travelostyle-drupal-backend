@@ -505,7 +505,7 @@ taxonomies:
       vid: best_seasons
       tid: '16'
       langcode: en
-      name: june-dec
+      name: June-Dec
       description__value: null
       description__format: null
       weight: '0'
@@ -856,3 +856,154 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: b0a263de-16e3-4afd-8abb-cff61a20afd3
+  travel_experiences:
+    -
+      vid: travel_experiences
+      tid: '58'
+      langcode: en
+      name: Adventure
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: e0459655-21cb-4097-8251-5c11e3c7fab9
+    -
+      vid: travel_experiences
+      tid: '65'
+      langcode: en
+      name: Beaches
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: ebbcc245-341f-48fc-9520-8170f24c8e55
+    -
+      vid: travel_experiences
+      tid: '61'
+      langcode: en
+      name: Camping
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 799dbb96-6579-4df1-8411-0cf55605b5c2
+    -
+      vid: travel_experiences
+      tid: '67'
+      langcode: en
+      name: 'City Life'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: ea1199d8-f6d6-47ac-9d26-97ca714d1a1a
+    -
+      vid: travel_experiences
+      tid: '66'
+      langcode: en
+      name: Coastal
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: 53193649-4514-437e-8adc-45ef01346a67
+    -
+      vid: travel_experiences
+      tid: '70'
+      langcode: en
+      name: Cruises
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '0'
+      uuid: 7cf74ae8-ff52-4fa3-8725-9259386c8055
+    -
+      vid: travel_experiences
+      tid: '64'
+      langcode: en
+      name: Culinary
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '0'
+      uuid: c747faae-41c3-4d68-bca6-b2c9afea3b80
+    -
+      vid: travel_experiences
+      tid: '62'
+      langcode: en
+      name: 'Culture & History'
+      description__value: null
+      description__format: null
+      weight: '7'
+      parent: '0'
+      uuid: b9552c93-73d7-4cd3-b348-71971daa1029
+    -
+      vid: travel_experiences
+      tid: '69'
+      langcode: en
+      name: Family-focused
+      description__value: null
+      description__format: null
+      weight: '8'
+      parent: '0'
+      uuid: 6c83cd7c-65ae-438c-84a5-dac6fed34230
+    -
+      vid: travel_experiences
+      tid: '63'
+      langcode: en
+      name: Festivals
+      description__value: null
+      description__format: null
+      weight: '9'
+      parent: '0'
+      uuid: eeaa62d8-0b8d-43c2-aa77-1017daa4ad70
+    -
+      vid: travel_experiences
+      tid: '68'
+      langcode: en
+      name: 'Luxury Escapes'
+      description__value: null
+      description__format: null
+      weight: '10'
+      parent: '0'
+      uuid: 71c42504-7502-4ecd-b02b-125e84545109
+    -
+      vid: travel_experiences
+      tid: '59'
+      langcode: en
+      name: 'Nature & Wildlife'
+      description__value: null
+      description__format: null
+      weight: '11'
+      parent: '0'
+      uuid: 9a46a11f-6495-455c-ac7c-d4874753f0d7
+    -
+      vid: travel_experiences
+      tid: '71'
+      langcode: en
+      name: 'Private Jet Journeys'
+      description__value: null
+      description__format: null
+      weight: '12'
+      parent: '0'
+      uuid: a18063b3-6c17-4b22-8cb4-0c4d0c8a0f58
+    -
+      vid: travel_experiences
+      tid: '72'
+      langcode: en
+      name: 'Rail Journeys'
+      description__value: null
+      description__format: null
+      weight: '13'
+      parent: '0'
+      uuid: 168493b1-07a3-495d-b32a-b06dc17e93f5
+    -
+      vid: travel_experiences
+      tid: '60'
+      langcode: en
+      name: Safaris
+      description__value: null
+      description__format: null
+      weight: '14'
+      parent: '0'
+      uuid: 520e583f-6c44-4474-b49d-cb655663340f
