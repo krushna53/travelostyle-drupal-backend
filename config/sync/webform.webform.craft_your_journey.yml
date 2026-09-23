@@ -44,16 +44,17 @@ elements: |-
     journey_id:
       '#type': hidden
       '#title': 'Journey ID'
-    experiences:
-      '#type': checkboxes
+    exeperience:
+      '#type': webform_entity_checkboxes
       '#title': Experiences
-      '#options':
-        Adventure: Adventure
-        Culture: Culture
-        Relaxation: Relaxation
-        Wildlife: Wildlife
-        Beach: Beach
-        Culinary: Culinary
+      '#target_type': taxonomy_term
+      '#selection_handler': 'default:taxonomy_term'
+      '#selection_settings':
+        target_bundles:
+          travel_experiences: travel_experiences
+        sort:
+          field: name
+          direction: asc
   step_2_guests_duration:
     '#type': webform_wizard_page
     '#title': 'Guests & Duration'
@@ -101,6 +102,9 @@ elements: |-
         Honeymoon: Honeymoon
         Vacation: Vacation
         Birthday: Birthday
+        'Family Trip': 'Family Trip'
+        'Bucket List': 'Bucket List'
+        'Friend Trip': 'Friend Trip'
         Other: Other
     expertnote:
       '#type': textarea

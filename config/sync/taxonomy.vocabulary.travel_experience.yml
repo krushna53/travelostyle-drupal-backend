@@ -1,9 +1,0 @@
-uuid: 236f37d0-ac64-47ce-9441-aa57284e52b4
-langcode: en
-status: true
-dependencies: {  }
-name: 'Travel Experience'
-vid: travel_experience
-description: null
-weight: 0
-new_revision: false

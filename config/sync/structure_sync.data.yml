@@ -1445,7 +1445,7 @@ taxonomies:
       uuid: b0a263de-16e3-4afd-8abb-cff61a20afd3
   travel_experience:
     -
-      vid: travel_experience
+      vid: travel_experiences
       tid: '84'
       langcode: en
       name: Adventure
