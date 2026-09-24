@@ -87,10 +87,14 @@ elements: |-
       '#title': 'Tailor Topics'
       '#options':
         'I want you to recommend more destinations and/or stopovers': 'I want you to recommend more destinations and/or stopovers'
-        'I am traveling with an infant and require some guidance': 'I am traveling with an infant and require some guidance'
-        'I need accessible accommodations': 'I need accessible accommodations'
         'I want to discuss my ideal accommodation type': 'I want to discuss my ideal accommodation type'
         'I want to discuss the pace of my journey': 'I want to discuss the pace of my journey'
+        "I'm traveling with my own group and would like a private rate": "I'm traveling with my own group and would like a private rate"
+        'I want you to recommend sights, activities, or experiences': 'I want you to recommend sights, activities, or experiences'
+        'I have dietary, accessibility, rooming, or other travel needs which I would like to discuss': 'I have dietary, accessibility, rooming, or other travel needs which I would like to discuss'
+        'My budget is flexible for the right experience': 'My budget is flexible for the right experience'
+        'I want to explore different travel dates': 'I want to explore different travel dates'
+        'I am traveling with an infant and require some guidance': 'I am traveling with an infant and require some guidance'
   step_4_trip_details:
     '#type': webform_wizard_page
     '#title': 'Trip Details'
@@ -105,6 +109,7 @@ elements: |-
         'Family Trip': 'Family Trip'
         'Bucket List': 'Bucket List'
         'Friend Trip': 'Friend Trip'
+        Babymoon: Babymoon
         Other: Other
     expertnote:
       '#type': textarea
@@ -362,5 +367,61 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  action:
+    id: action
+    handler_id: action
+    label: Action
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      notes: ''
+      sticky: null
+      locked: null
+      data: ''
+      message: '<p>Thank you</p>'
+      message_type: status
+      debug: false
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: admin@example.com
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
 variants: {  }
